@@ -1,0 +1,254 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogType?: string;
+}
+
+const SITE = 'https://centralcoasttreeservice.com.au';
+const PHONE_DISPLAY = '';
+const PHONE_TEL = '+61485939966';
+const EMAIL = 'quotes@centralcoasttreeservice.com.au';
+const BIZ_NAME = 'Central Coast Tree Services';
+
+const { title, description, canonical = SITE + '/', ogType = 'website' } = Astro.props;
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "@id": SITE + "/#business",
+  "name": BIZ_NAME,
+  "image": SITE + "/images/og-image.jpg",
+  "url": SITE,
+  "priceRange": "$$",
+  "description": "Qualified arborists and tree contractors for the NSW Central Coast — tree removal, lopping and pruning, stump grinding, 24/7 emergency and storm work, and land clearing. AS 4373 pruning, AS 4970 tree protection, Central Coast Council permit navigation and RFS 10/50 hazard-reduction clearing. Spotted gum, angophora and bushland-block specialists from Gosford to Woy Woy.",
+  "areaServed": [
+    { "@type": "City", "name": "Central Coast", "containedInPlace": { "@type": "AdministrativeArea", "name": "Central Coast Region" } },
+    { "@type": "City", "name": "Gosford" },
+    { "@type": "City", "name": "Terrigal" },
+    { "@type": "City", "name": "Wyong" },
+    { "@type": "City", "name": "Erina" },
+    { "@type": "City", "name": "Woy Woy" },
+    { "@type": "City", "name": "The Entrance" },
+    { "@type": "City", "name": "Avoca Beach" },
+    { "@type": "City", "name": "Kincumber" },
+    { "@type": "City", "name": "Tuggerah" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Gosford",
+    "addressRegion": "NSW",
+    "postalCode": "2250",
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -33.4249,
+    "longitude": 151.3413
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "07:00",
+    "closes": "17:00"
+  }],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Tree Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tree Removal" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tree Lopping & Pruning (AS 4373)" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stump Grinding & Removal" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency & Storm Tree Removal" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Land Clearing & Mulching" }}
+    ]
+  }
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": SITE + "/#website",
+  "url": SITE + "/",
+  "name": BIZ_NAME,
+  "inLanguage": "en-AU",
+  "publisher": { "@id": SITE + "/#business" }
+};
+// BreadcrumbList JSON-LD auto-generated from Astro.url.pathname
+const pathname = Astro.url.pathname;
+const breadcrumbSegments = pathname.split('/').filter(Boolean);
+const breadcrumbItems = [{ "@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/" }];
+let cumulative = SITE;
+breadcrumbSegments.forEach((seg, i) => {
+  cumulative += '/' + seg;
+  // Human-friendly name: kebab → Title Case, special-case 'services' → Services
+  const friendly = seg === 'services'
+    ? 'Services'
+    : seg.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+  breadcrumbItems.push({
+    "@type": "ListItem",
+    "position": i + 2,
+    "name": friendly,
+    "item": cumulative + '/'
+  });
+});
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbItems
+};
+
+---
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonical}>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#1f3d2f">
+
+  <meta property="og:type" content={ogType}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={canonical}>
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:site_name" content={BIZ_NAME}>
+  <meta property="og:image" content={SITE + "/images/og-image.jpg"}>
+  <meta property="og:image:secure_url" content={SITE + "/images/og-image.jpg"}>
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content={BIZ_NAME + " — free quote, call today"}>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={SITE + "/images/og-image.jpg"}>
+  <meta name="twitter:image:alt" content={BIZ_NAME + " — free quote, call today"}>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Playfair+Display:wght@900&family=Stardos+Stencil:wght@700&display=swap">
+
+  <!-- Google Search Console verification (DNS TXT primary; meta backup) -->
+  <meta name="google-site-verification" content="GSC-TOKEN-PLACEHOLDER">
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'send_page_view': true,
+      'anonymize_ip': true
+    });
+  </script>
+
+  <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <slot name="head" />
+</head>
+<body>
+  <div class="top-bar">
+    <span>Tree removal &middot; Lopping &middot; Stump grinding &middot; 24/7 storm work &middot; Across the NSW Central Coast &middot; <a class="ph-cta" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span><span class="ph-text">&nbsp;Tap to call</span></a></span>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="/" aria-label="Central Coast Tree Services home">
+        <img src="/images/logo.svg" alt="Central Coast Tree Services" width="320" height="80" decoding="async">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/services/tree-removal/">Removal</a></li>
+        <li><a href="/services/tree-lopping/">Lopping</a></li>
+        <li><a href="/services/stump-grinding/">Stump Grinding</a></li>
+        <li><a href="/services/emergency-tree-removal/">Emergency</a></li>
+        <li><a href="/services/land-clearing/">Land Clearing</a></li>
+        <li><a href="/central-coast-region/">Areas</a></li>
+      </ul>
+      <a class="nav-cta" href="/quote/">Free Quote</a>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Central Coast Tree Services</h4>
+        <p style="margin-bottom: 0.75rem;">Qualified arborists for the NSW Central Coast — tree removal, lopping and pruning, stump grinding, 24/7 storm response and land clearing. AS 4373 pruning, AS 4970 tree protection, Central Coast Council permit help and RFS 10/50 hazard-reduction. Spotted gum, angophora and bushland-block specialists.</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Phone:</strong> <a class="ph-cta" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span><span class="ph-text">&nbsp;Tap to call</span></a></p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Hours:</strong> Mon&ndash;Sat 7am&ndash;5pm AEST &middot; 24/7 for storm emergencies</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Service area:</strong> Full Central Coast Region &mdash; Gosford to Woy Woy, The Entrance to Wyong</p>
+        <p style="margin-bottom: 0;"><strong style="color:#fff;">ABN:</strong> 91 664 546 061</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/tree-removal/">Tree removal</a></li>
+          <li><a href="/services/tree-lopping/">Tree lopping &amp; pruning</a></li>
+          <li><a href="/services/stump-grinding/">Stump grinding</a></li>
+          <li><a href="/services/emergency-tree-removal/">Emergency &amp; storm removal</a></li>
+          <li><a href="/services/land-clearing/">Land clearing &amp; mulching</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="/gosford/">Gosford</a></li>
+          <li><a href="/terrigal/">Terrigal</a></li>
+          <li><a href="/wyong/">Wyong</a></li>
+          <li><a href="/erina/">Erina</a></li>
+          <li><a href="/woy-woy/">Woy Woy</a></li>
+          <li><a href="/central-coast-region/">All Central Coast Region</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      &copy; {new Date().getFullYear()} {BIZ_NAME} &middot; Yes Right Pty Ltd ABN 91 664 546 061. Qualified arborist &amp; tree services across the NSW Central Coast.
+    </p>
+  </footer>
+
+  <a class="mobile-phone ph-cta" href="/quote/" aria-label="Call us">
+    <span aria-hidden="true">&#9742;</span><span class="ph-text">&nbsp;Tap to call</span>
+  </a>
+  <script is:inline>
+    (function(){
+      // 2026-05-23: phone assembled from non-contiguous fragments
+      // so no contiguous phone-number substring exists in static HTML.
+      // Google can index attributes & visible text; the .ph-cta links default to /quote/
+      // for no-JS users, and JS rewrites href to tel: + injects display text.
+      var p1 = 485, p2 = 939, p3 = 966;
+      var disp = '0' + p1 + ' ' + p2 + ' ' + p3;
+      var tel  = '+61' + p1 + p2 + p3;
+      document.querySelectorAll('.ph-cta').forEach(function(el){
+        el.setAttribute('href', 'tel:' + tel);
+        el.setAttribute('aria-label', 'Call ' + disp);
+        var t = el.querySelector('.ph-text');
+        if (t) t.textContent = ' ' + disp;
+      });
+    })();
+  </script>
+</body>
+</html>

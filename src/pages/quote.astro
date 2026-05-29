@@ -1,0 +1,139 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Free Tree Service Quote | Central Coast Tree Services"
+  description="Get a free tree service quote on the Central Coast — removal, lopping & pruning, stump grinding, emergency storm work or land clearing. Qualified arborists, written fixed price, permit advice."
+  canonical="https://centralcoasttreeservice.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free Quote</span>
+      <h1>Get your free tree quote.</h1>
+      <p class="hero-sub">
+        Tell us what you need &mdash; tree removal, lopping or pruning, stump grinding,
+        emergency storm work, or land clearing. We'll assess the tree on site, check
+        access and permit status, and give you a written fixed price, free and with
+        no obligation. Tree down right now? Call us &mdash; we run 24/7 storm response.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Gosford 2250, Terrigal 2260, Woy Woy 2256" />
+
+            <label for="service-type">What do you need?</label>
+            <select id="service-type" name="service-type">
+              <option value="not-sure">Not sure &mdash; want a recommendation</option>
+              <option value="tree-removal">Tree removal</option>
+              <option value="tree-lopping">Tree lopping &amp; pruning</option>
+              <option value="stump-grinding">Stump grinding</option>
+              <option value="emergency">Emergency / storm tree removal</option>
+              <option value="land-clearing">Land clearing &amp; mulching</option>
+              <option value="arborist-report">Arborist report / permit help</option>
+            </select>
+
+            <label for="property-type">Property type</label>
+            <select id="property-type" name="property-type">
+              <option value="house">Free-standing house</option>
+              <option value="townhouse">Townhouse / unit</option>
+              <option value="acreage">Acreage / rural-residential</option>
+              <option value="vacant-block">Vacant block / new build</option>
+              <option value="commercial">Commercial / strata</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="tree-size">Approximate tree size</label>
+            <select id="tree-size" name="tree-size">
+              <option value="not-sure">Not sure</option>
+              <option value="small">Small (under 5m)</option>
+              <option value="medium">Medium (5&ndash;10m)</option>
+              <option value="large">Large (10&ndash;15m)</option>
+              <option value="very-large">Very large (15m+)</option>
+              <option value="multiple">Multiple trees</option>
+            </select>
+
+            <label for="urgency">Urgency</label>
+            <select id="urgency" name="urgency">
+              <option value="emergency">EMERGENCY &mdash; tree down / dangerous now</option>
+              <option value="this-week">Within a week</option>
+              <option value="2-weeks">Within 2 weeks</option>
+              <option value="month">Within a month</option>
+              <option value="quote-only">Quote only, no urgency</option>
+            </select>
+
+            <label for="access">Access / location notes</label>
+            <select id="access" name="access">
+              <option value="open">Open / easy machine access</option>
+              <option value="tight">Tight access (side gate only)</option>
+              <option value="over-structure">Tree over house / pool / fence</option>
+              <option value="near-powerlines">Near powerlines</option>
+              <option value="steep">Steep / hillside block</option>
+              <option value="not-sure">Not sure</option>
+            </select>
+
+            <label for="message">Any details? (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tree species if known, what's wrong (dead, leaning, storm damage), what you want done, deadline, gate width, powerline proximity, etc."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send quote request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Free, no obligation. Emergency storm calls answered 24/7.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a class="ph-cta" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon&ndash;Sat 7am&ndash;5pm AEST &middot; 24/7 storm response</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9650;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Full Central Coast Region &mdash; Gosford, Terrigal, Wyong, Erina, Woy Woy, The Entrance, Avoca Beach, Kincumber, Tuggerah and surrounds.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>Free on-site assessment</li>
+                <li>Written fixed-price quote, no obligation</li>
+                <li>Honest advice &mdash; prune or remove</li>
+                <li>Permit status checked, arborist report if needed</li>
+                <li>AS 4373 pruning &mdash; we never top</li>
+                <li>Fully insured, SafeWork NSW practices, full clean-up</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

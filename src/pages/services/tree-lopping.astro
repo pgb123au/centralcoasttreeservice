@@ -1,0 +1,149 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between lopping and proper pruning?",
+      "acceptedAnswer": { "@type": "Answer", "text": "'Lopping' often means hacking back to stubs or topping a tree to reduce its height — and that's bad arboriculture. Proper pruning follows AS 4373 (Pruning of Amenity Trees): cuts are made at the right point so the tree can seal the wound, and the work is targeted — crown thinning, selective reduction, deadwooding or clearance. The result solves the problem (light, view, clearance, weight) while keeping the tree healthy and structurally sound. We prune to AS 4373; we don't top." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why won't you top my tree to make it shorter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Topping cuts the canopy back to stubs. The tree responds with a flush of dense, weakly-attached regrowth (water-shoots), the exposed cuts let in decay, and within a few years you have a denser, taller, more dangerous tree than you started with — plus an ongoing cost to keep cutting it. A correct crown reduction to AS 4373 lowers and lightens the canopy at proper branch unions, which is sustainable. If the tree is genuinely too big for the spot, removal is the honest answer, not topping." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does tree pruning cost on the Central Coast?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Like removal, pruning is quoted per job. A small, accessible pruning job might start around $250–$300; mid-range canopy work on a medium tree often sits between $500 and $1,500; large structural pruning or difficult-access work can reach $2,000–$3,000+. Deadwooding a big spotted gum or angophora over a house sits at the higher end because of the rigging and climbing involved. We give a free written quote on site." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a permit just to prune?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Minor maintenance pruning and pruning that complies with AS 4373 is often exempt under Central Coast Council's controls, but heavier reductions on protected trees can need a Private Tree Works approval. The safest approach is to let us assess the tree first — we'll tell you whether the work is exempt or needs Council approval, and prepare a report if required. Check with Council on (02) 4306 7900 if in doubt." }
+    }
+  ]
+};
+---
+<Layout
+  title="Tree Lopping & Pruning Central Coast | AS 4373 Arborists"
+  description="Tree lopping & pruning Central Coast — AS 4373 crown thinning, deadwooding, canopy reduction and view-line pruning by qualified arborists. We prune correctly and never top. Free quote."
+  canonical="https://centralcoasttreeservice.com.au/services/tree-lopping/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">AS 4373 pruning &middot; crown thinning &middot; deadwooding</span>
+      <h1>Tree lopping &amp; pruning on the <span class="accent">Central Coast</span>.</h1>
+      <p class="hero-sub">
+        Qualified arborists pruning to AS 4373 &mdash; crown thinning, selective
+        reduction, deadwooding, clearance and view-line work. We solve the light,
+        view, clearance or weight problem while keeping the tree healthy and
+        structurally sound. What we don't do is top trees, because topping makes
+        them more dangerous, not less. Free written quote on site.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Pruning done properly &mdash; to AS 4373.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>The pruning types we do.</h3>
+        <ul>
+          <li><strong>Crown thinning:</strong> selectively removing inner branches to let wind and light through. Reduces the &lsquo;sail&rsquo; effect that makes spotted gums and angophoras catch the wind and shed limbs.</li>
+          <li><strong>Crown reduction:</strong> lowering and reshaping the canopy at correct branch unions &mdash; the sustainable alternative to topping when a tree is too big for the spot.</li>
+          <li><strong>Deadwooding:</strong> removing dead and hanging limbs. The single most important safety job on mature coastal eucalypts, which drop deadwood without warning.</li>
+          <li><strong>Clearance pruning:</strong> lifting the canopy off roofs, gutters, solar panels, driveways and fences, and clearing growth back from the building.</li>
+          <li><strong>View-line &amp; light pruning:</strong> opening a coastal or hinterland view, or getting morning light back into the yard &mdash; done at proper cut points so it lasts.</li>
+          <li><strong>Formative pruning:</strong> shaping young trees early so they grow with good structure and never need heavy work later.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">What AS 4373 actually means.</h3>
+        <p>
+          AS 4373 (Pruning of Amenity Trees) is the Australian Standard every
+          competent arborist works to. It governs <strong>where</strong> a cut is
+          made so the tree can compartmentalise and seal the wound, and it caps how
+          much live canopy can be removed in one go. Cuts made the wrong way &mdash; flush
+          cuts, stub cuts, topping &mdash; tear the tree's defences open to decay and
+          force weak regrowth. Pruning to AS 4373 costs the same in labour but leaves
+          you with a healthier, safer tree. It's also the benchmark Central Coast
+          Council references when deciding whether pruning work is exempt.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we will never top a tree.</h3>
+        <p>
+          Topping &mdash; sawing the top off a canopy to make a tree shorter &mdash; is the
+          one job we turn down. It triggers a flush of dense, weakly-attached
+          water-shoots that are far more failure-prone than the original limbs;
+          it exposes the heartwood to decay and the trunk to sunburn; and it locks
+          you into re-cutting the regrowth every couple of years. Within five years
+          a topped tree is taller, bushier and more dangerous than before. If a tree
+          genuinely doesn't fit the space, we'll quote a correct crown reduction or,
+          honestly, <a href="/services/tree-removal/">removal</a> &mdash; not a quick top
+          that creates a worse problem.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Coastal eucalypts need the right hand.</h3>
+        <p>
+          Spotted gum, angophora, blackbutt and turpentine dominate Central Coast
+          canopies, and they respond to pruning differently to ornamentals. Over-thin
+          an angophora and you can trigger epicormic stress growth; deadwood it
+          properly and you remove the limbs most likely to fail in a hot, still
+          afternoon. Salt-laden coastal wind also adds stress at Terrigal, Avoca and
+          the peninsula. We prune for the species and the site, not by the metre.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2026 pricing guide.</h3>
+        <ul>
+          <li><strong>Small / accessible pruning:</strong> from around $250&ndash;$300.</li>
+          <li><strong>Mid-range canopy work (medium tree):</strong> roughly $500&ndash;$1,500.</li>
+          <li><strong>Large structural pruning / difficult access:</strong> $2,000&ndash;$3,000+.</li>
+          <li><strong>Deadwooding a large gum over a house:</strong> higher end, due to rigging and climbing.</li>
+        </ul>
+        <p>
+          Free on-site quote, written fixed price, full clean-up and chipping
+          included. Need it gone instead? See <a href="/services/tree-removal/">tree
+          removal</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/gosford/">Gosford</a>
+        <a class="area-pill" href="/terrigal/">Terrigal</a>
+        <a class="area-pill" href="/wyong/">Wyong</a>
+        <a class="area-pill" href="/erina/">Erina</a>
+        <a class="area-pill" href="/woy-woy/">Woy Woy</a>
+        <a class="area-pill" href="/central-coast-region/">All Central Coast Region</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free pruning quote.</h2>
+        <p>AS 4373 pruning by qualified arborists. We keep your tree healthy &mdash; we never top.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

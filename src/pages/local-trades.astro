@@ -1,0 +1,208 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a permit to remove a tree on the Central Coast?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually yes. Under Central Coast Council's Development Control Plan (Tree and Vegetation Management), most established trees on private land are protected and you generally need an approved Private Tree Works application before removal or major pruning. Exemptions include dead trees, certain declared weed and non-native species, work that complies with AS 4373, and genuine imminent-risk situations. Heritage-listed trees and trees in vegetation communities have stricter rules. Confirm with Council on (02) 4306 7900 before any work — removing a protected tree without approval carries heavy fines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check if I'm in an RFS 10/50 bushfire clearing area?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the NSW Rural Fire Service 10/50 online tool and enter your address. If your property is inside the entitlement area, the code lets you clear trees within 10m of a home and underlying shrubs (not trees) within 50m, without a separate Council approval, to reduce bushfire risk. It applies only to your own land and only within the mapped area — it is not a blanket clearing licence and does not override every other obligation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is AS 4373 and why does it matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AS 4373 (Pruning of Amenity Trees) is the Australian Standard that governs how trees are pruned — where cuts are made so the tree can seal the wound, and how much live canopy can be removed at once. Pruning to AS 4373 keeps a tree healthy and structurally sound; bad practices like topping and stub cuts open it to decay and weak, dangerous regrowth. Central Coast Council also references AS 4373 when deciding whether pruning work is exempt from a permit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check an arborist is qualified and insured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask for their arboriculture qualification (AQF Level 3 for climbing/ground arborists, Level 5 for consulting arborists who write reports), a current public liability insurance certificate, and confirmation they work to SafeWork NSW height-safety and chainsaw requirements. Arboriculture Australia is the national professional body and a useful reference for industry standards. For any work near powerlines, the operator must observe legal minimum approach distances and coordinate with Ausgrid (13 20 80)."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Central Coast Tree Rules & Resources | Permits, RFS 10/50, Standards"
+  description="A plain-English Central Coast tree-services resource — Council tree permits, RFS 10/50 bushfire clearing, AS 4373 pruning, AS 4970 tree protection and SafeWork NSW, with links to the official authorities."
+  canonical="https://centralcoasttreeservice.com.au/local-trades/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Central Coast tree rules &amp; resources</span>
+      <h1>Tree rules &amp; resources for the <span class="accent">Central Coast</span>.</h1>
+      <p class="hero-sub">
+        Before you remove, prune or clear a tree on the Central Coast, it's worth
+        knowing the rules &mdash; when you need a Council permit, how the RFS 10/50
+        bushfire clearing code works, and which Australian Standards govern pruning,
+        tree protection and safety. Here's a plain-English rundown, with links to the
+        official authorities so you can check your own property.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Free tree quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Permits &amp; bushfire clearing</span>
+      <h2>When you need approval &mdash; and when you don&rsquo;t.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Central Coast Council tree permits.</h3>
+        <p>
+          On the Central Coast, most established trees on private land are
+          <strong>protected</strong> under Central Coast Council's Development
+          Control Plan (Tree and Vegetation Management). In most cases you need an
+          approved <strong>Private Tree Works application</strong> before removing or
+          heavily pruning a protected tree. There are genuine exemptions &mdash; dead
+          trees, certain declared weed and non-native species, minor maintenance
+          pruning that complies with AS 4373, and trees that pose a genuine imminent
+          risk &mdash; but heritage-listed trees and trees within vegetation communities
+          are more tightly controlled. If you're not sure which category your tree
+          falls into, check with Council before any work; the consequences of
+          removing a protected tree without approval are significant.
+        </p>
+
+        <h3 style="margin-top: 2rem;">RFS 10/50 bushfire clearing.</h3>
+        <p>
+          If your property is on bushfire-prone land &mdash; common right across the
+          Woy Woy peninsula, bushland-backed Erina and parts of Wyong &mdash; you may be
+          able to clear under the <strong>10/50 Vegetation Clearing Code</strong>.
+          Where your address falls inside the entitlement area, the code allows you
+          to clear trees within <strong>10m</strong> of a home and underlying shrubs
+          (not trees) within <strong>50m</strong>, without separate Council approval,
+          to reduce fire risk. Always check your specific address on the NSW RFS
+          online tool first &mdash; the entitlement is mapped, applies only to your own
+          land, and is not a general clearing licence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#f9fafb;">
+    <div class="section-inner">
+      <span class="section-eyebrow">Official authorities &amp; standards</span>
+      <h2>Where to check the rules yourself.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <ul style="margin-top:1rem;">
+          <li style="margin-bottom:0.75rem;">
+            <strong>Central Coast Council &mdash; Trees and Vegetation</strong>
+            &mdash; the authority for tree permits, Private Tree Works applications,
+            exemptions and the Tree and Vegetation Management controls. Phone
+            (02) 4306 7900.
+            <a href="https://www.centralcoast.nsw.gov.au/residents/property/trees-and-vegetation" target="_blank" rel="external noopener">centralcoast.nsw.gov.au &mdash; trees and vegetation</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>NSW Rural Fire Service &mdash; 10/50 Vegetation Clearing</strong>
+            &mdash; the bushfire clearing code, the entitlement-area lookup tool, and
+            the rules on what you may clear near a home.
+            <a href="https://www.rfs.nsw.gov.au/plan-and-prepare/1050-vegetation-clearing" target="_blank" rel="external noopener">rfs.nsw.gov.au &mdash; 10/50 vegetation clearing</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Standards Australia &mdash; AS 4373 &amp; AS 4970</strong>
+            &mdash; AS 4373 (Pruning of Amenity Trees) and AS 4970 (Protection of
+            Trees on Development Sites) are the standards competent arborists work to.
+            <a href="https://store.standards.org.au/" target="_blank" rel="external noopener">store.standards.org.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>SafeWork NSW</strong>
+            &mdash; the work health and safety regulator. Tree work involves chainsaws,
+            working at height and elevated work platforms &mdash; SafeWork sets the
+            requirements operators must follow.
+            <a href="https://www.safework.nsw.gov.au/" target="_blank" rel="external noopener">safework.nsw.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Arboriculture Australia</strong>
+            &mdash; the national professional body for arborists. A useful reference for
+            qualifications, industry standards and what to expect from a competent
+            tree contractor.
+            <a href="https://www.arboriculture.org.au/" target="_blank" rel="external noopener">arboriculture.org.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Ausgrid &mdash; trees and powerlines</strong>
+            &mdash; the network operator for the Central Coast. Report trees on or near
+            powerlines, and check the rules on vegetation around the network. Faults
+            and emergencies: 13 20 80.
+            <a href="https://www.ausgrid.com.au/" target="_blank" rel="external noopener">ausgrid.com.au</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>Common Central Coast tree questions.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Do I need a permit just to prune?</h3>
+        <p>
+          Minor maintenance pruning and pruning that complies with AS 4373 is often
+          exempt, but heavier reductions on protected trees can need a Private Tree
+          Works approval. The safe approach is to confirm the work's status before
+          starting &mdash; we'll tell you in the free quote, and prepare an arborist
+          report if Council needs one.
+        </p>
+        <h3 style="margin-top:1.5rem;">What if a tree is an immediate danger?</h3>
+        <p>
+          Genuine imminent-risk situations (a tree about to fall on a dwelling, a
+          dangerous storm-damaged limb) generally fall outside the normal permit
+          process so the hazard can be made safe &mdash; but the bar is real risk, not
+          convenience, and you should keep evidence (photos) of the hazard. If a tree
+          is on powerlines, keep clear and call Ausgrid on 13 20 80. Then call us &mdash;
+          we run <a href="/services/emergency-tree-removal/">24/7 storm response</a>.
+        </p>
+        <h3 style="margin-top:1.5rem;">How do I avoid a cowboy operator?</h3>
+        <p>
+          Ask for the arboriculture qualification, a current public liability
+          insurance certificate, and confirmation they work to SafeWork NSW
+          requirements. Be wary of anyone who offers to <strong>top</strong> your
+          tree (bad arboriculture) or to remove a clearly protected tree with no
+          mention of a permit. Good arborists <a href="/services/tree-lopping/">prune
+          to AS 4373</a> and tell you the rules straight.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--c-navy);color:#fff;">
+    <div class="section-inner" style="text-align:center;">
+      <h2 style="color:#fff;">Free quote &mdash; honest Central Coast tree advice.</h2>
+      <p style="opacity:0.85;max-width:50rem;margin:1rem auto 2rem;">
+        Tree removal, lopping and pruning, stump grinding, storm work and land
+        clearing &mdash; by qualified arborists who sort the permit question, prune to
+        AS 4373, and never top a tree.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+</Layout>

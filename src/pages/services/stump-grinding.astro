@@ -1,0 +1,166 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does stump grinding cost on the Central Coast?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most stump-grinding jobs carry a minimum callout of around $200 because the grinder has to be floated to site. As a 2026 size guide: small stumps (under 30cm) roughly $100–$200, medium (30–60cm) $150–$350, large (60–100cm) $250–$500, and very large (100cm+) $400–$800. Hardwood stumps like spotted gum cost more than softwood of the same size because the wood is denser and slower to grind. Several stumps in one visit drop the per-stump price. We quote on site, free." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between grinding and full stump removal?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Grinding chews the stump and major surface roots down below ground level with a rotating cutting wheel, leaving a hole filled with wood chip that you backfill and turf or plant over. Full excavation pulls the whole root ball out — far more digging, more cost and more disturbance — and is only needed where the entire root system must go, such as before footings or a pool. For almost all gardens, grinding is the right, cheaper choice." }
+    },
+    {
+      "@type": "Question",
+      "name": "How deep do you grind the stump?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For lawn or garden we typically grind 200–300mm below the surface, which is enough to re-turf or plant most shrubs over the top. If you're laying a slab, paving, footings or a pool, tell us — we grind deeper and chase the major lateral roots so the area is properly clear. We rake the chip back into the hole to settle, or remove it and leave it as mulch, whichever you prefer." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can your grinder fit through a standard backyard gate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Usually yes. We run narrow-access stump grinders that fit through a standard side gate (around 700–900mm) to reach backyard stumps without removing fencing. Very tight or elevated Central Coast blocks may need a smaller machine or hand-barrow access, which we'll flag in the quote. If there's rock, underground services or a retaining wall near the stump, tell us so we can use Dial Before You Dig and plan around it." }
+    }
+  ]
+};
+---
+<Layout
+  title="Stump Grinding Central Coast | Below-Grade Stump Removal"
+  description="Stump grinding Central Coast — below-grade grinding and surface-root removal so you can re-turf, pave, build or replant. Narrow-access machines for tight backyards. Free quote, mulch left on request."
+  canonical="https://centralcoasttreeservice.com.au/services/stump-grinding/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Below-grade grinding &middot; narrow-access machines</span>
+      <h1>Stump grinding across the <span class="accent">Central Coast</span>.</h1>
+      <p class="hero-sub">
+        We grind stumps and major surface roots down below ground level so you can
+        re-turf, pave, build or replant &mdash; no more mowing around it, tripping over
+        it, or watching it sprout suckers. Narrow-access grinders fit through a
+        standard side gate to reach backyard stumps. Free written quote, and we
+        leave the wood-chip mulch for your garden if you'd like.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What stump grinding involves.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Why grind the stump at all?</h3>
+        <p>
+          A left-behind stump is more than an eyesore. It's a mowing obstacle and a
+          trip hazard, it can re-shoot (many eucalypts and weed species sucker
+          vigorously from a cut stump), and a rotting stump becomes a home for
+          termites and fungal decay close to the house. Grinding it out clears the
+          ground so you can lay lawn, build a deck, pave, run a fence line or plant
+          something new in the same spot. It's the natural finish to a
+          <a href="/services/tree-removal/">tree removal</a>.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Grinding vs full excavation.</h3>
+        <p>
+          <strong>Grinding</strong> uses a rotating tungsten-tipped cutting wheel to
+          chew the stump and major surface roots into chip, below ground level, with
+          minimal disturbance to the surrounding garden. It's quick, clean and the
+          right choice for almost every residential job. <strong>Full excavation</strong>
+          &mdash; digging the entire root ball out &mdash; is far more invasive and costly, and
+          we only recommend it where the whole root system genuinely has to go,
+          such as directly under planned footings, a slab or a pool. For most Central
+          Coast yards, grinding is what you want.
+        </p>
+
+        <h3 style="margin-top: 2rem;">How deep, and what's left.</h3>
+        <p>
+          For lawn or garden beds we grind <strong>200&ndash;300mm below the
+          surface</strong> &mdash; deep enough to turf or plant shrubs over the top. If
+          you're laying a slab, paving, footings or a pool, tell us and we grind
+          deeper and chase the major lateral roots so the area is properly clear.
+          Stump grinding produces a pile of wood-chip mixed with soil; we rake it
+          back into the hole to settle, or remove it and leave clean chip you can use
+          as <a href="/services/land-clearing/">mulch</a> on the garden &mdash; your call.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Access &mdash; tight Central Coast blocks.</h3>
+        <p>
+          Lots of Central Coast backyards are steep, narrow or only reachable through
+          a side gate. We run <strong>narrow-access stump grinders</strong> that fit
+          through a standard gate (around 700&ndash;900mm) to reach stumps without
+          pulling fencing apart. Very tight or elevated sites may need a smaller
+          machine, and we'll note that in the quote. If there's a retaining wall, rock
+          or underground services near the stump, let us know up front so we plan the
+          cut safely &mdash; we use Dial Before You Dig where there's any doubt about
+          buried services.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2026 price guide.</h3>
+        <p>
+          A minimum callout of around <strong>$200</strong> applies because the
+          grinder has to be transported to site. Beyond that, price tracks stump size
+          and species:
+        </p>
+        <ul>
+          <li><strong>Small stump (under 30cm):</strong> roughly $100&ndash;$200.</li>
+          <li><strong>Medium (30&ndash;60cm):</strong> roughly $150&ndash;$350.</li>
+          <li><strong>Large (60&ndash;100cm):</strong> roughly $250&ndash;$500.</li>
+          <li><strong>Very large (100cm+):</strong> roughly $400&ndash;$800.</li>
+          <li><strong>Multiple stumps, one visit:</strong> the per-stump price drops noticeably.</li>
+        </ul>
+        <p>
+          Dense Central Coast hardwoods (spotted gum, blackbutt, ironbark) sit at the
+          top of each band because they're slower to grind than softwoods. Having a
+          tree taken out too? Bundle the grind with the <a href="/services/tree-removal/">removal</a>
+          in the same visit and save the second callout.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don't cut corners.</h3>
+        <p>
+          A stump ground only to soil level looks done but re-shoots and stays a trip
+          hazard &mdash; so we grind properly below grade and chase the surface roots that
+          matter. We check for services before we start, guard against thrown debris,
+          and protect nearby paving, pool edges and walls. Cheap, shallow grinding is
+          a false economy you pay for twice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/gosford/">Gosford</a>
+        <a class="area-pill" href="/terrigal/">Terrigal</a>
+        <a class="area-pill" href="/wyong/">Wyong</a>
+        <a class="area-pill" href="/erina/">Erina</a>
+        <a class="area-pill" href="/woy-woy/">Woy Woy</a>
+        <a class="area-pill" href="/central-coast-region/">All Central Coast Region</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free stump-grinding quote.</h2>
+        <p>Narrow-access machines, ground below grade, mulch left for your garden on request.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

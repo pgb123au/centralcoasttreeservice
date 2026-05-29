@@ -1,0 +1,169 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to remove a tree on the Central Coast?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tree removal is quoted per tree, not per hour, because size, species, access and proximity to buildings and powerlines change everything. As a 2026 Central Coast guide: small tree under 5m around $300–$800, medium 5–10m $800–$2,500, large 10–15m $2,500–$6,000, and very large 15m-plus spotted gum or angophora $6,000–$10,000+ where a crane or traffic management is needed. Stump grinding is usually quoted separately. We give a free written fixed price on site." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need Council approval to remove the tree?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Usually yes. Most established trees on private Central Coast land are protected under Council's Tree and Vegetation Management controls and need an approved Private Tree Works application before removal. Dead trees, declared weeds and genuine imminent-risk trees can be exempt. We assess this for you and can prepare the arborist report Council needs. Confirm with Council on (02) 4306 7900 if you're unsure — removing a protected tree without approval carries significant fines." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you remove a tree right next to my house or over the pool?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Confined, high-value targets like trees overhanging a roof, between two houses, or over a pool are removed by sectional dismantling — a climbing arborist rigs and lowers the tree in controlled pieces — or by crane where access allows. It takes longer and costs more than a paddock drop, but it's how the tree comes down without damaging anything below. We plan drop zones and rigging before a cut is made." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you remove the stump and clean up afterwards?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Clean-up is always included — limbs chipped, logs removed or cut to firewood length, and the site raked. Stump grinding is a separate option because not everyone wants it: leaving a stump is cheaper, grinding it lets you re-turf, pave or replant. We can grind the stump in the same visit, and leave the wood-chip mulch for your garden if you'd like." }
+    }
+  ]
+};
+---
+<Layout
+  title="Tree Removal Central Coast | Safe Sectional & Crane Removal"
+  description="Tree removal Central Coast — safe sectional and crane-assisted removal of large, dead, leaning and hazardous trees by qualified arborists. Tight access, over-pool, near-powerline. Free quote, full clean-up."
+  canonical="https://centralcoasttreeservice.com.au/services/tree-removal/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Sectional &middot; crane-assisted &middot; hazardous removals</span>
+      <h1>Tree removal across the <span class="accent">Central Coast</span>.</h1>
+      <p class="hero-sub">
+        Safe removal of large, dead, leaning and hazardous trees &mdash; spotted gum,
+        angophora, blackbutt, turpentine and the lot. Tight-access backyards,
+        trees over a pool, and removals near powerlines handled by qualified
+        arborists with the right rigging and machines. Full clean-up included,
+        stump grinding optional. Free written fixed quote on site.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What tree removal involves.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>When a tree should come out.</h3>
+        <p>
+          Not every tree needs removing &mdash; correct pruning saves a lot of them.
+          But removal is the honest answer when a tree is dead or dying, structurally
+          failing (major included-bark unions, large cavities, root-plate lifting),
+          leaning more after a storm, growing into footings or a slab, or simply
+          the wrong tree planted in the wrong place. On the Central Coast we also
+          remove a steady stream of storm-damaged spotted gums and angophoras
+          whose major limbs have already failed once. If a tree can be made safe
+          by <a href="/services/tree-lopping/">pruning to AS 4373</a> instead, we'll
+          tell you that first.
+        </p>
+
+        <h3 style="margin-top: 2rem;">How we take it down &mdash; safely.</h3>
+        <p>
+          Most Central Coast removals are <strong>sectional dismantles</strong>:
+          a climbing arborist (or an elevated work platform where access allows)
+          works down the tree, rigging and lowering limbs and trunk sections in
+          controlled pieces into a planned drop zone. For very large trees, tight
+          sites, or trees overhanging a house or pool, we bring in a
+          <strong>crane</strong> to lift sections clear. Only on open, accessible
+          blocks do we straight-fell. Every job is planned before a cut is made &mdash;
+          drop zones, rigging points, exclusion areas and traffic control &mdash; and
+          run to SafeWork NSW chainsaw and EWP height-safety requirements.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Powerlines &mdash; the non-negotiable.</h3>
+        <p>
+          Trees near powerlines are a specialist, regulated job. Work close to the
+          network has minimum approach distances, and in many cases Ausgrid has to
+          isolate or insulate the line first. We never freelance around live
+          conductors. If your tree is touching or close to powerlines, treat it as
+          dangerous, keep clear, and call Ausgrid on 13 20 80 &mdash; then call us to
+          plan a safe, compliant removal.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2026 Central Coast price guide.</h3>
+        <p>
+          Arborists quote a fixed price per tree because every removal is different.
+          As a guide for the Central Coast:
+        </p>
+        <ul>
+          <li><strong>Small tree (under 5m):</strong> roughly $300&ndash;$800.</li>
+          <li><strong>Medium tree (5&ndash;10m):</strong> roughly $800&ndash;$2,500.</li>
+          <li><strong>Large tree (10&ndash;15m):</strong> roughly $2,500&ndash;$6,000.</li>
+          <li><strong>Very large (15m+) spotted gum / angophora:</strong> $6,000&ndash;$10,000+ where a crane, traffic management or multiple days are needed.</li>
+          <li><strong>Stump grinding:</strong> usually separate &mdash; add roughly $150&ndash;$500 depending on size and access. See <a href="/services/stump-grinding/">stump grinding</a>.</li>
+        </ul>
+        <p>
+          Tight backyards, over-pool removals, near-powerline work and difficult
+          species (dense hardwoods produce more, heavier waste) push toward the top
+          of each band. We confirm the exact figure in a free on-site quote.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Permits &mdash; we sort this before we start.</h3>
+        <p>
+          Most established trees on private Central Coast land are protected under
+          Central Coast Council's Tree and Vegetation Management controls, and
+          removal generally needs an approved <strong>Private Tree Works
+          application</strong> first. Dead trees, declared weed species and genuine
+          imminent-risk trees can be exempt. We assess your tree's status, and where
+          a permit is needed we can prepare the supporting arborist report (referencing
+          AS 4970 tree-protection where neighbouring trees are involved). It's worth
+          getting right &mdash; removing a protected tree without approval carries heavy
+          fines.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don't cut corners.</h3>
+        <p>
+          We don't drop limbs we can't control, we don't ignore powerline approach
+          distances to save a callout, and we don't talk you into removing a tree
+          that good pruning would save. We carry full public liability insurance and
+          our crews work to SafeWork NSW height-safety and chainsaw standards. The
+          cheap operator who skips rigging and isolation is the one whose limb ends
+          up through your roof &mdash; or worse. For emergencies, see our
+          <a href="/services/emergency-tree-removal/">24/7 storm tree removal</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/gosford/">Gosford</a>
+        <a class="area-pill" href="/terrigal/">Terrigal</a>
+        <a class="area-pill" href="/wyong/">Wyong</a>
+        <a class="area-pill" href="/erina/">Erina</a>
+        <a class="area-pill" href="/woy-woy/">Woy Woy</a>
+        <a class="area-pill" href="/central-coast-region/">All Central Coast Region</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free tree-removal quote.</h2>
+        <p>On-site assessment, written fixed price, permit advice and full clean-up included.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,220 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does tree removal cost on the Central Coast in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Every tree is quoted as a fixed price because access, size, species and proximity to the house and powerlines all change the job. As a 2026 Central Coast guide: a small tree under 5m is roughly $300–$800, a medium 5–10m tree $800–$2,500, a large 10–15m tree $2,500–$6,000, and a very large 15m-plus spotted gum or angophora can run $6,000–$10,000+ where a crane, traffic management or multiple days are needed. Tight backyards, removals over a pool, and trees against powerlines sit at the top of each band. Stump grinding is usually separate — add roughly $150–$500 depending on stump size and access. We give a written fixed quote on site, free, with no obligation." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a Central Coast Council permit to remove a tree?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Often, yes. Under Central Coast Council's Development Control Plan (Chapter 3.5/3.6 Tree and Vegetation Management) most established trees on private land are protected, and you generally need an approved Private Tree Works application before removal or major pruning. There are exemptions — dead trees, declared weed species, certain small or non-native garden vegetation, work that complies with AS 4373, and genuine imminent-risk situations. Heritage-listed trees and trees in vegetation communities have stricter rules. We assess whether your tree is exempt or needs a permit, and we can prepare an arborist report to support a Council application. When in doubt, confirm with Council on (02) 4306 7900 before any work starts — removing a protected tree without approval carries heavy fines." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my tree covered by the RFS 10/50 bushfire clearing rule?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Only if your property falls inside the 10/50 Vegetation Clearing Entitlement Area, which you can check on the NSW Rural Fire Service online tool by entering your address. Where you are eligible, the code lets you clear trees within 10m of a home and underlying shrubs (not trees) within 50m, without a separate Council approval, to reduce bushfire risk. Much of bushland-backed Central Coast — Woy Woy peninsula, Erina near Strickland State Forest, parts of Wyong — sits in or near the entitlement area. The 10/50 code is not a blanket licence: it only applies to your own land, only within the mapped area, and it does not override every other obligation. We confirm your eligibility against the RFS tool before relying on it." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do emergency and storm tree work after hours?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — 24/7. East Coast Low storms regularly drop limbs and whole trees across the Central Coast, and salt-laden coastal wind makes spotted gum and angophora prone to sudden limb failure. If a tree is on your house, car, fence or across the driveway, call any time and we will make the site safe first, then plan the full removal. If a tree is on or near powerlines, treat it as live and dangerous, keep clear, and call Ausgrid on 13 20 80 as well as us. We provide insurance-ready reports and photos for storm-damage claims." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will you 'top' my tree to reduce its height?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No — topping (lopping off the top of a tree's canopy) is bad arboriculture and we won't do it. Topping forces dense, weakly-attached regrowth, exposes the trunk to decay and sunburn, and leaves a more dangerous tree within a few years. Instead we prune to AS 4373 — crown thinning, selective reduction, deadwooding and clearance pruning — which keeps the tree healthy and structurally sound while solving the light, view or clearance problem. If a tree genuinely can't be made safe by correct pruning, the honest answer is removal, not topping, and we'll tell you so." }
+    }
+  ]
+};
+---
+<Layout
+  title="Tree Removal Central Coast | Arborist, Lopping & Stump Grinding"
+  description="Tree removal Central Coast — qualified arborists for removal, lopping & pruning, stump grinding, 24/7 storm work and land clearing across Gosford, Terrigal, Wyong, Erina & Woy Woy. AS 4373. Free quote."
+  canonical="https://centralcoasttreeservice.com.au/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Gosford &middot; Terrigal &middot; Wyong &middot; Erina &middot; Woy Woy</span>
+      <h1>Tree removal across the <span class="accent">NSW Central Coast</span> &mdash; done safely.</h1>
+      <p class="hero-sub">
+        Qualified arborists for tree removal, lopping &amp; pruning, stump grinding,
+        24/7 storm response and land clearing. Spotted gum, angophora and
+        bushland-block specialists who know the Central Coast Council permit rules
+        and the RFS 10/50 clearing code. Big crane jobs to a single hazardous limb &mdash;
+        we make the site safe and clean up properly.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>24/7</strong>Emergency &amp; storm response</div>
+        <div><strong>AS 4373</strong>Correct pruning &mdash; never topping</div>
+        <div><strong>Insured</strong>Full public liability cover</div>
+        <div><strong>Free</strong>On-site quotes, no obligation</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we do</span>
+      <h2>Five tree services.</h2>
+      <p class="section-lead">
+        From dropping a single dead gum in a tight Gosford backyard through to
+        clearing an Erina bushland block for a build. Qualified arborists, the
+        right gear, and full clean-up on every job.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/tree-removal/">
+          <div class="svc-icon" aria-hidden="true">&#9650;</div>
+          <h3>Tree removal</h3>
+          <p>Safe sectional + crane-assisted removal of large, dead, leaning and hazardous trees. Tight access, over-pool and near-powerline jobs handled. Full clean-up and waste removal included.</p>
+          <span class="svc-link">See tree removal &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/tree-lopping/">
+          <div class="svc-icon" aria-hidden="true">&#9728;</div>
+          <h3>Tree lopping &amp; pruning</h3>
+          <p>AS 4373 crown thinning, deadwooding, canopy reduction and view-line pruning by qualified arborists. We prune to keep the tree healthy &mdash; we never top.</p>
+          <span class="svc-link">See lopping &amp; pruning &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/stump-grinding/">
+          <div class="svc-icon" aria-hidden="true">&#9679;</div>
+          <h3>Stump grinding</h3>
+          <p>Below-grade stump grinding and surface-root removal so you can re-turf, pave, build or replant. Narrow-access machines fit through standard gates.</p>
+          <span class="svc-link">See stump grinding &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/emergency-tree-removal/">
+          <div class="svc-icon" aria-hidden="true">&#9888;</div>
+          <h3>Emergency &amp; storm removal</h3>
+          <p>24/7 response for fallen and dangerous trees on homes, cars, fences and across driveways. Site made safe first, insurance reports and photos provided.</p>
+          <span class="svc-link">See emergency work &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/land-clearing/">
+          <div class="svc-icon" aria-hidden="true">&#9635;</div>
+          <h3>Land clearing &amp; mulching</h3>
+          <p>Block clearing for builds and acreage, RFS 10/50 bushfire hazard-reduction, on-site mulching and chipping. Selective clearing that keeps the trees worth keeping.</p>
+          <span class="svc-link">See land clearing &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Central Coast arborist</span>
+      <h2>Three things every Central Coast tree job should get right.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>Spotted gum and angophora drop limbs &mdash; without warning.</h3>
+          <p>
+            Most Central Coast blocks carry mature <strong>spotted gum
+            (Corymbia maculata)</strong> and <strong>Sydney red gum / angophora
+            (Angophora costata)</strong>. Both are beautiful, both are notorious
+            for sudden summer limb drop &mdash; angophora especially sheds large
+            limbs in still, hot weather and after the salt-laden coastal wind
+            stresses the canopy. Reading which limbs are a genuine failure risk,
+            and reducing weight correctly rather than just lopping, is the
+            difference between a safe tree and one that puts a branch through a
+            roof. We assess structure, not just height.
+          </p>
+        </div>
+        <div>
+          <h3>The permit rules are strict &mdash; get them wrong and it's a big fine.</h3>
+          <p>
+            Under Central Coast Council's Tree and Vegetation Management controls,
+            most established trees on private land are <strong>protected</strong>,
+            and removal or major pruning usually needs an approved Private Tree
+            Works application first. Dead trees, declared weeds and genuine
+            imminent-risk situations can be exempt, and AS 4373-compliant pruning
+            of some species is allowed &mdash; but the line is easy to cross. We tell
+            you up front whether your tree is exempt or needs a permit, and we can
+            write the arborist report Council needs to approve it.
+          </p>
+        </div>
+        <div>
+          <h3>Storm and bushfire exposure change the priorities.</h3>
+          <p>
+            The Central Coast cops <strong>East Coast Low storms</strong> that
+            bring down limbs and whole trees, and large areas &mdash; the Woy Woy
+            peninsula, bushland-backed Erina, parts of Wyong &mdash; sit on
+            RFS-mapped bushfire-prone land. That means two extra jobs a generalist
+            misses: keeping high-risk limbs off the house before storm season, and
+            using the <strong>RFS 10/50 clearing entitlement</strong> correctly to
+            reduce fuel near the home where your property qualifies. We check the
+            RFS tool for your address before relying on it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we work.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        Across the full Central Coast Region &mdash; coastal premium suburbs,
+        bushland blocks, low-lying paperbark lots and the peninsula. Same-week
+        bookings for standard jobs, 24/7 for storm emergencies.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/gosford/">Gosford</a>
+        <a class="area-pill" href="/terrigal/">Terrigal</a>
+        <a class="area-pill" href="/wyong/">Wyong</a>
+        <a class="area-pill" href="/erina/">Erina</a>
+        <a class="area-pill" href="/woy-woy/">Woy Woy</a>
+        <a class="area-pill" href="/central-coast-region/">Central Coast Region</a>
+        <span class="area-pill area-pill-static">The Entrance</span>
+        <span class="area-pill area-pill-static">Avoca Beach</span>
+        <span class="area-pill area-pill-static">Kincumber</span>
+        <span class="area-pill area-pill-static">Tuggerah</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From quote to clean-up &mdash; 5 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Free quote</h3><p>Phone or online request. We assess the tree on site, check access and permit status, and give a written fixed price &mdash; free, no obligation.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Permit check</h3><p>We confirm whether the work is exempt or needs a Central Coast Council Private Tree Works approval, and prepare an arborist report if required.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Safe set-up</h3><p>Drop zones, rigging, traffic control and EWP or crane as needed. Powerline and over-structure work planned to SafeWork NSW height-safety rules.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>The work</h3><p>Sectional dismantle, climbing or crane removal, AS 4373 pruning or grinding. Done by qualified arborists with the right gear for the species.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Clean-up</h3><p>Limbs chipped, logs removed or cut to firewood, site raked clean. Optional stump grinding and on-site mulch left for your garden beds.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Ready for a free quote?</h2>
+        <p>On-site assessment, written fixed price, permit advice included. 24/7 for storm emergencies.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

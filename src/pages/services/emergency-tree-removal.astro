@@ -1,0 +1,155 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you do emergency tree work 24/7 on the Central Coast?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — round the clock, every day. East Coast Low storms regularly drop limbs and whole trees across the Central Coast, and they don't keep business hours. If a tree is on your house, car, fence or across the driveway, call any time and we'll make the site safe first, then plan the full removal. After a major storm there can be a queue, so genuine life-safety and access-blocking jobs are prioritised." }
+    },
+    {
+      "@type": "Question",
+      "name": "There's a tree on the powerlines — what do I do?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Treat it as live and deadly. Stay well clear, keep children and pets inside, don't touch the tree, the line or anything they're touching, and don't drive over fallen lines. Call Ausgrid on 13 20 80 to report it and have the line isolated. Tree work near the network has legal minimum approach distances — we coordinate with Ausgrid and only start once it's safe and compliant. We never freelance around live conductors." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my insurance cover storm tree removal?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Often, yes — many home and contents policies cover removing a tree that has fallen on and damaged an insured structure (house, fence, carport), though cover for simply clearing a fallen tree off the ground varies between insurers. We provide insurance-ready documentation — dated photos, a description of the hazard and the make-safe and removal work — so you can lodge the claim. Check your policy's storm-damage and 'tree removal' clauses, and keep our report and invoice." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between making safe and full removal?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In an emergency the first priority is to remove the immediate danger — cut the limb off the roof, clear the tree blocking the driveway, stabilise a partly-fallen tree — so people are safe and access is restored. That's the 'make-safe'. The full removal (taking the rest of the tree down, grinding the stump, full clean-up) is then planned and often done as a follow-up in daylight when it can be done properly and, where needed, with a permit. We explain which stage we're at and what it costs." }
+    }
+  ]
+};
+---
+<Layout
+  title="Emergency & Storm Tree Removal Central Coast | 24/7 Arborist"
+  description="24/7 emergency & storm tree removal Central Coast — fallen and dangerous trees on homes, cars, fences and driveways made safe fast. Insurance reports provided. East Coast Low storm response."
+  canonical="https://centralcoasttreeservice.com.au/services/emergency-tree-removal/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">24/7 &middot; storm response &middot; fallen &amp; dangerous trees</span>
+      <h1>Emergency &amp; storm tree removal on the <span class="accent">Central Coast</span>.</h1>
+      <p class="hero-sub">
+        When an East Coast Low brings a spotted gum down on the roof, splits a limb
+        over the driveway, or leaves a tree leaning on the fence, call us any time &mdash;
+        day or night. We make the site safe first, then plan the full removal.
+        Insurance-ready reports and photos provided. If a tree is on powerlines,
+        keep clear and call Ausgrid on 13 20 80 as well.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Request a callback</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Storm and emergency tree work, explained.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Why the Central Coast gets so much storm tree damage.</h3>
+        <p>
+          The Central Coast sits squarely in <strong>East Coast Low</strong>
+          territory &mdash; the intense coastal storms that hammer the NSW coast with
+          gale-force wind and heavy rain, most often in autumn and winter. Saturated
+          ground loosens root plates, and the region's signature
+          <strong>spotted gum and angophora</strong> are both prone to shedding
+          large limbs (angophora notoriously drops limbs even in still, hot weather).
+          Add salt-laden coastal wind at Terrigal, Avoca and the Woy Woy peninsula,
+          and limb and whole-tree failure is a regular event &mdash; which is why we
+          run an after-hours response.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What to do in the first five minutes.</h3>
+        <ul>
+          <li><strong>Get everyone clear</strong> of the tree and anything it's resting on. A partly-fallen tree can shift without warning.</li>
+          <li><strong>Powerlines: assume live and lethal.</strong> Don't approach, don't touch anything in contact with the line, don't drive over fallen wires. Call <strong>Ausgrid on 13 20 80</strong>.</li>
+          <li><strong>Life-threatening emergency</strong> (someone trapped or hurt, building collapse): call <strong>000</strong> first. For flooding or structural risk from storm, the SES is <strong>132 500</strong>.</li>
+          <li><strong>Then call us</strong> for the tree itself. Send a photo if you can &mdash; it helps us bring the right gear.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Make-safe first, full removal second.</h3>
+        <p>
+          Our first job in an emergency is to <strong>remove the immediate
+          danger</strong>: lift or cut the limb off the roof, clear the tree blocking
+          the driveway, or stabilise a tree that's partly down and could move. Once
+          the site is safe and access is restored, we plan the <strong>full
+          removal</strong> &mdash; often as a daylight follow-up so it can be done properly,
+          with rigging, a crane if needed, and a permit where the rest of the tree is
+          protected. We tell you which stage we're at and what each costs.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Insurance claims &mdash; we give you the paperwork.</h3>
+        <p>
+          Many home policies cover removing a tree that has fallen on and damaged an
+          insured structure. We provide <strong>insurance-ready documentation</strong>
+          &mdash; dated photos of the damage and hazard, a plain description of the
+          make-safe and removal work, and an itemised invoice &mdash; so your claim is
+          straightforward. Cover for simply clearing a fallen tree off open ground
+          varies between insurers, so check your storm-damage and tree-removal
+          clauses and keep our report.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Get ahead of the next storm.</h3>
+        <p>
+          The cheapest emergency is the one that never happens. Before storm season we
+          <a href="/services/tree-lopping/">deadwood and weight-reduce</a> the limbs
+          most likely to fail over a house, and remove trees already showing failure
+          signs. A pre-season inspection of your mature gums is a fraction of the cost
+          of an after-hours crane job plus a roof repair. For non-urgent work see
+          <a href="/services/tree-removal/">tree removal</a>.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don't cut corners &mdash; even at 2am.</h3>
+        <p>
+          Storm jobs are the most dangerous tree work there is: trees under load,
+          unstable root plates, darkness, wet conditions and often powerlines.
+          That's exactly when shortcuts get people hurt. We work to SafeWork NSW
+          chainsaw and height-safety requirements, carry full public liability
+          insurance, and stand back from any line work until Ausgrid has made it safe.
+          We'd rather make the site safe and finish properly in daylight than rush a
+          dangerous full removal in the dark.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/gosford/">Gosford</a>
+        <a class="area-pill" href="/terrigal/">Terrigal</a>
+        <a class="area-pill" href="/wyong/">Wyong</a>
+        <a class="area-pill" href="/erina/">Erina</a>
+        <a class="area-pill" href="/woy-woy/">Woy Woy</a>
+        <a class="area-pill" href="/central-coast-region/">All Central Coast Region</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Tree down? Call now &mdash; 24/7.</h2>
+        <p>Site made safe first, full removal planned, insurance reports provided. Storm response any hour.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Request a callback</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

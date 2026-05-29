@@ -1,0 +1,164 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I clear vegetation around my house under the RFS 10/50 rule?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Only if your property is inside the 10/50 Vegetation Clearing Entitlement Area, which you check on the NSW Rural Fire Service online tool by entering your address. Where you qualify, the code lets you clear trees within 10m of a home and underlying shrubs (not trees) within 50m, without separate Council approval, to reduce bushfire risk. It applies only to your own land and only within the mapped area. Much of bushland-backed Central Coast — the Woy Woy peninsula, Erina near Strickland State Forest, parts of Wyong — sits in or near the entitlement area. We confirm your eligibility against the RFS tool before relying on it." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a permit to clear a block for building on the Central Coast?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Usually yes. Outside the narrow 10/50 entitlement and other exemptions, clearing native vegetation and removing protected trees on the Central Coast is regulated by Central Coast Council (and, for larger or biodiversity-significant clearing, by NSW vegetation laws). Clearing tied to an approved development is handled through the DA. We assess what's exempt, what needs a Private Tree Works approval, and what needs to stay (AS 4970 tree protection) before any machine starts. Confirm with Council on (02) 4306 7900 if unsure — unlawful clearing carries heavy penalties." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to the cleared timber and vegetation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most of it can be mulched and chipped on site, which cuts disposal cost and gives you usable mulch for the garden, erosion control or to leave spread on an acreage block. Larger logs can be cut to firewood length or removed. Where green waste has to leave site we take it to a licensed facility. We'll talk through how much to chip-and-keep versus haul away when we quote." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you do selective clearing rather than clear-felling everything?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Absolutely, and on most Central Coast blocks that's the smart approach. We mark and keep the healthy, structurally-sound trees worth retaining — the ones that add value, shade and screening — and remove only what's dead, hazardous, weedy or genuinely in the way of the build or fire-safety setback. Retained trees are protected to AS 4970 during machine work so their root zones aren't damaged. You end up with a usable block that still has its best trees." }
+    }
+  ]
+};
+---
+<Layout
+  title="Land Clearing & Mulching Central Coast | Block & Bushfire Clearing"
+  description="Land clearing & mulching Central Coast — block clearing for builds and acreage, RFS 10/50 bushfire hazard-reduction, on-site mulching and chipping. Selective clearing, AS 4970 tree protection. Free quote."
+  canonical="https://centralcoasttreeservice.com.au/services/land-clearing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Block clearing &middot; RFS 10/50 hazard-reduction &middot; mulching</span>
+      <h1>Land clearing &amp; mulching across the <span class="accent">Central Coast</span>.</h1>
+      <p class="hero-sub">
+        Block clearing for builds and acreage, bushfire hazard-reduction under the
+        RFS 10/50 code, and on-site mulching and chipping. We clear selectively &mdash;
+        keeping the healthy trees worth keeping and protecting their root zones to
+        AS 4970 &mdash; and we sort the Central Coast Council permit question before any
+        machine starts. Free written quote on site.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What land clearing involves.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Block clearing for a build.</h3>
+        <p>
+          Whether it's a single house block in a Wyong estate or an acreage parcel
+          at Erina or the Terrigal hinterland, clearing for a build means removing
+          the trees, scrub and stumps in the building envelope and access &mdash; while
+          retaining what's protected, valuable or required as screening. We work in
+          with your builder's setbacks and the development approval, remove the
+          vegetation cleanly, and grind the stumps so the pad is ready. Selective is
+          almost always better than clear-felling: you keep the block's best trees
+          and avoid unnecessary permit headaches.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Bushfire hazard-reduction &amp; the RFS 10/50 code.</h3>
+        <p>
+          Large parts of the Central Coast &mdash; the <strong>Woy Woy peninsula</strong>,
+          bushland-backed <strong>Erina</strong> near Strickland State Forest, and
+          parts of <strong>Wyong</strong> &mdash; sit on RFS-mapped bushfire-prone land.
+          Where your property falls inside the <strong>10/50 Vegetation Clearing
+          Entitlement Area</strong> (check your address on the NSW RFS online tool),
+          the code lets you clear trees within <strong>10m</strong> of a home and
+          underlying shrubs within <strong>50m</strong>, without a separate Council
+          approval, to reduce fuel near the house. It applies only to your own land
+          and only within the mapped area &mdash; it is not a blanket licence. We confirm
+          eligibility against the RFS tool first, then do the work to create a proper
+          defendable space.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Permits &mdash; what's allowed and what isn't.</h3>
+        <p>
+          Outside the 10/50 entitlement and other narrow exemptions, clearing native
+          vegetation and removing protected trees is regulated by Central Coast
+          Council, and larger or biodiversity-significant clearing falls under NSW
+          vegetation law. Clearing tied to an approved development is handled through
+          the DA conditions. We assess what's <strong>exempt</strong>, what needs a
+          <strong>Private Tree Works approval</strong>, and what must be retained, and
+          we can prepare the supporting arborist documentation. Getting this right
+          matters &mdash; unlawful clearing on the Central Coast carries heavy penalties
+          and can stall a build.
+        </p>
+
+        <h3 style="margin-top: 2rem;">On-site mulching &amp; chipping.</h3>
+        <p>
+          Hauling green waste off site is expensive, so we <strong>mulch and chip on
+          site</strong> wherever we can. That turns the cleared scrub and limbs into
+          usable mulch you can spread on garden beds, use for erosion control, or
+          leave stockpiled on an acreage block. Larger logs are cut to firewood length
+          or removed, and anything that has to leave site goes to a licensed facility.
+          You decide how much to chip-and-keep versus haul away.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Selective clearing &amp; tree protection (AS 4970).</h3>
+        <p>
+          On most blocks the right job is selective: keep the healthy, structurally
+          sound trees that add value, shade and screening, and remove only what's
+          dead, hazardous, weedy or in the way. Retained trees are protected during
+          machine work to <strong>AS 4970 (Protection of Trees on Development
+          Sites)</strong> &mdash; that means fencing the tree-protection zone and keeping
+          machinery and fill off the root zone, so the trees you keep actually
+          survive the build. Heavy-handed clearing that damages retained trees just
+          creates hazards and removal jobs a year or two later.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don't cut corners.</h3>
+        <p>
+          We don't clear-fell a block when selective clearing gives a better result,
+          we don't rely on the 10/50 code without first checking your address on the
+          RFS tool, and we don't strip protected vegetation and leave you exposed to a
+          penalty. Crews work to SafeWork NSW requirements and we carry full public
+          liability insurance. Big stumps left behind? See
+          <a href="/services/stump-grinding/">stump grinding</a>; whole-tree work, see
+          <a href="/services/tree-removal/">tree removal</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/gosford/">Gosford</a>
+        <a class="area-pill" href="/terrigal/">Terrigal</a>
+        <a class="area-pill" href="/wyong/">Wyong</a>
+        <a class="area-pill" href="/erina/">Erina</a>
+        <a class="area-pill" href="/woy-woy/">Woy Woy</a>
+        <a class="area-pill" href="/central-coast-region/">All Central Coast Region</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free land-clearing quote.</h2>
+        <p>Block clearing, RFS 10/50 hazard-reduction, on-site mulching. Selective clearing, permit advice included.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
