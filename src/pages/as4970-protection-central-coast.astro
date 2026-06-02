@@ -1,0 +1,203 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is AS 4970 and when does a Central Coast build need to follow it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS 4970-2009 'Protection of trees on development sites' is the Australian Standard your DA condition will reference whenever a tree on or near your block is being kept through construction. Central Coast Council routinely conditions DAs with words like 'tree protection in accordance with AS 4970' on the consent notice for any retained tree of regulated size — typically over 5m tall or 3m canopy spread on the 2017 Tree & Vegetation DCP. Your builder, your excavator and your concreter all need a copy of the AS 4970 plan before site works start, and a Project Arborist needs to certify it." }
+    },
+    {
+      "@type": "Question",
+      "name": "How big is the Tree Protection Zone (TPZ) around a kept tree?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Under AS 4970 the Tree Protection Zone radius is the trunk diameter at 1.4m above ground (DBH) multiplied by 12, with a minimum of 2m and a maximum of 15m. So a 400mm DBH spotted gum on a Terrigal block has a 4.8m TPZ radius — a 9.6m circle around the trunk inside which no excavation, no stockpiling, no parking, no concrete washout and no service trenching is allowed without project-arborist sign-off. The Structural Root Zone (SRZ) inside the TPZ is even more sensitive — calculated separately and never to be encroached." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the fencing specification actually require?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS 4970 calls for a continuous 1.8m chain-mesh or temp-fence panel on star pickets driven outside the TPZ, with shade-cloth or signage marking the boundary, installed before any other work starts on site and not moved without project-arborist consent. The ground inside the TPZ is mulched 75–100mm deep with coarse wood-chip to spread loads and retain moisture. On Central Coast sites we additionally pin a laminated 'TREE PROTECTION ZONE — NO ENTRY' sign every 5m and photograph the fence weekly for the compliance file." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the watering schedule for a TPZ tree during a Central Coast summer build?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS 4970 directs that retained trees receive supplementary water through any period of construction stress, especially across the December–February dry months we routinely run on the Central Coast. We specify 50–80mm equivalent rainfall delivered slowly across the TPZ once per fortnight (about 1,500–2,500L for a medium tree), via a leaky-hose ring at the TPZ edge so water moves into the active root zone rather than running off. We log the watering dates in the compliance diary and the project arborist signs off at practical completion." }
+    }
+  ]
+};
+---
+<Layout
+  title="AS 4970 Tree Protection Central Coast — TPZ, Fencing, Sign-Off"
+  description="AS 4970 tree protection on Central Coast construction sites — TPZ and SRZ calculation, the fencing spec, the no-dig and no-stockpile rules, the watering schedule and the project-arborist sign-off your DA condition requires."
+  canonical="https://centralcoasttreeservice.com.au/as4970-protection-central-coast/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">AS 4970-2009 &middot; DA-conditioned tree protection &middot; project-arborist sign-off</span>
+      <h1>AS 4970 tree protection during construction on the <span class="accent">Central Coast</span>.</h1>
+      <p class="hero-sub">
+        If your DA condition reads &ldquo;tree protection in accordance with AS 4970&rdquo;,
+        your builder needs a Project Arborist on the file before the first excavator
+        tracks onto the block. We set the TPZ and SRZ, draw the fence line, write
+        the construction protection plan, supervise the no-dig area through to
+        practical completion, and sign the certificate Central Coast Council
+        will ask to see.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/quote/">Project arborist quote</a>
+        <a class="btn btn-ghost" href="tel:+61485939966">Call us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Where AS 4970 fits into a Central Coast DA condition</h2>
+      <p>
+        The Tree &amp; Vegetation provisions in Central Coast Council&rsquo;s 2017
+        DCP regulate any tree over 5m high or 3m canopy spread on private land
+        outside the few prescribed exempt species. When a DA proposes a build
+        next to a regulated tree, Council&rsquo;s default consent condition is
+        not &ldquo;remove it&rdquo; &mdash; it&rsquo;s &ldquo;retain and protect
+        per AS 4970&rdquo;. That single line is what we&rsquo;re engaged to
+        deliver: a written tree-protection plan, a fenced and signed TPZ on site
+        before the slab is poured next door, fortnightly supervision visits
+        through the construction program, and a sign-off certificate at
+        practical completion.
+      </p>
+      <p>
+        Where this comes badly unstuck is when the builder reads the condition
+        as &ldquo;don&rsquo;t touch the tree&rdquo; and lets the concreter wash out
+        the truck inside the TPZ, or the excavator stockpiles soil against the
+        trunk for a week. By the time anyone notices, the root plate has been
+        alkali-burned or compacted to the point the canopy will die back over
+        the next two summers. Council can require replacement planting at 1:1
+        or even 2:1 mature-equivalent, plus penalty units. AS 4970 protection
+        done properly is far cheaper than the remediation bill.
+      </p>
+
+      <h2>TPZ, SRZ and the maths you can&rsquo;t skip</h2>
+      <p>
+        The Tree Protection Zone radius under AS 4970 is the trunk Diameter at
+        Breast Height (DBH, measured 1.4m above ground) multiplied by 12, with
+        a 2m minimum and 15m maximum. A 600mm DBH angophora on a Killcare
+        ridge-block sits inside a 7.2m radius TPZ &mdash; a 14.4m circle no
+        plant can drive into. The Structural Root Zone (SRZ) is the smaller
+        ring of structural roots holding the tree upright, calculated by a
+        separate formula in AS 4970 (D &times; 50 &times; 0.64, capped lower)
+        and never to be encroached at all without engineering remediation. Most
+        DAs simply forbid SRZ incursion outright.
+      </p>
+      <p>
+        For irregular or eccentric canopies &mdash; common on coastal-windswept
+        trees from Avoca Beach to Norah Head &mdash; AS 4970 allows the TPZ to
+        be re-shaped (not reduced in area) to follow the canopy asymmetry,
+        provided the project arborist documents the reason and Council accepts
+        it. That&rsquo;s a written variation, not a verbal one.
+      </p>
+
+      <h2>The fencing and ground-protection specification</h2>
+      <p>
+        The boundary of the TPZ is fenced with continuous 1.8m chain-mesh or
+        temporary-fence panels on driven star pickets, installed before any
+        other site works begin. Shade-cloth or hi-vis mesh marks the line,
+        and a laminated &ldquo;Tree Protection Zone &mdash; No Entry, No
+        Stockpiling, No Excavation, No Service Trenches&rdquo; sign is fixed
+        at 5m intervals. Inside the fence the soil surface is mulched to
+        75&ndash;100mm with coarse arborist-grade wood-chip, both to spread
+        any inadvertent foot load and to retain moisture across the build.
+      </p>
+      <p>
+        Services that genuinely must cross the TPZ (drainage, power, comms)
+        are installed by horizontal directional drill or hand-dug pier-and-beam,
+        never by open trench. The project arborist supervises any such crossing
+        and signs the supervision sheet on the day. Cut-and-fill changes inside
+        a 2m buffer of the TPZ edge usually need a tree-sensitive design
+        change &mdash; raised slab, suspended floor or a retaining wall on
+        piers clear of the SRZ.
+      </p>
+
+      <h2>The watering schedule, dust suppression and sign-off</h2>
+      <p>
+        Central Coast summers run dry from December to February with regular
+        37&deg;C+ days inland of Wyong, and a tree under construction stress
+        loses canopy fast without help. We specify 50&ndash;80mm equivalent
+        rainfall across the TPZ once per fortnight (1,500&ndash;2,500L for a
+        medium tree) delivered by leaky-hose ring at the TPZ edge so water
+        moves into the active root zone, plus dust-suppression water-spray
+        on any neighbouring earthworks. Watering dates go in the compliance
+        diary alongside the fortnightly inspection photos.
+      </p>
+      <p>
+        At practical completion the project arborist re-inspects the tree,
+        verifies canopy condition and bark integrity, and signs the AS 4970
+        compliance certificate that closes out the DA condition. That signed
+        cert is what your conveyancer will ask for at settlement if a future
+        buyer&rsquo;s solicitor pulls the DA file. Fee for a typical
+        single-tree Central Coast build &mdash; site visit, TPZ plan, four
+        supervision visits and sign-off &mdash; sits in the $1,200&ndash;$2,800
+        band depending on tree size and program length.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>FAQs &mdash; AS 4970, TPZ, fencing, watering</h2>
+      <h3>What is AS 4970 and when does my Central Coast DA need it?</h3>
+      <p>
+        AS 4970-2009 is the Australian Standard for protecting trees on
+        development sites. Central Coast Council conditions DAs to it whenever
+        a regulated tree (over 5m tall or 3m canopy spread under the 2017 DCP)
+        is being kept through construction. The condition requires a Project
+        Arborist&rsquo;s plan, fenced TPZ, supervision and sign-off.
+      </p>
+      <h3>How is the Tree Protection Zone size calculated?</h3>
+      <p>
+        TPZ radius = DBH (trunk diameter at 1.4m) &times; 12, minimum 2m,
+        maximum 15m. A 400mm DBH spotted gum gives a 4.8m radius TPZ &mdash; a
+        9.6m no-entry circle around the trunk. The Structural Root Zone (SRZ)
+        inside the TPZ is calculated separately and is effectively no-go.
+      </p>
+      <h3>What does the AS 4970 fencing look like?</h3>
+      <p>
+        1.8m chain-mesh or temp-fence panel on driven star pickets, installed
+        before any site works begin, on the TPZ boundary &mdash; not on the
+        canopy drip-line. Shade-cloth or hi-vis mesh marks the line, signs
+        every 5m, 75&ndash;100mm wood-chip mulch over the ground inside.
+      </p>
+      <h3>How often does the kept tree need to be watered during construction?</h3>
+      <p>
+        Fortnightly across the December&ndash;February dry season, 50&ndash;80mm
+        equivalent rainfall (1,500&ndash;2,500L for a medium tree), delivered
+        by leaky-hose ring at the TPZ edge so water reaches the active root
+        zone. Watering and inspection dates go in the compliance diary the
+        project arborist signs off at practical completion.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner cta-block">
+      <h2>DA condition mentions AS 4970? Get the arborist on the file early.</h2>
+      <p>
+        The cheapest version of this job is the one where the project arborist
+        is engaged before the site fence even goes up, the TPZ is drawn before
+        the excavator&rsquo;s booked, and every subbie sees the no-entry zone
+        on day one. Getting us in after the first incursion is more expensive
+        and the tree often can&rsquo;t be saved anyway.
+      </p>
+      <p class="ph-text">
+        Call <a class="ph-cta btn btn-primary" href="tel:+61485939966">+61 485 939 966</a>
+        or email <a href="mailto:quotes@centralcoasttreeservice.com.au">quotes@centralcoasttreeservice.com.au</a>
+        with your DA reference and the tree species/location, and we&rsquo;ll
+        scope the project-arborist appointment from there.
+      </p>
+    </div>
+  </section>
+</Layout>

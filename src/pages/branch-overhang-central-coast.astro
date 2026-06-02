@@ -1,0 +1,224 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I legally prune my neighbour's tree where it overhangs my Central Coast block?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — under NSW common law you have the right to prune any part of a neighbour's tree that crosses the boundary, back to the boundary line, at your own cost. That right is limited by three things: you can't trespass onto the neighbour's land to make the cut, you can't damage the parent tree (cuts must be sound arboricultural practice per AS 4373), and you can't touch any tree that's heritage-listed, protected by a Tree Preservation Order, or that falls under Central Coast Council's 2017 Tree & Vegetation DCP without a permit. The branches you cut are technically still the neighbour's property and you should offer them back before disposing of them." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which trees on a Central Coast block are exempt from Tree Preservation Order rules?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Central Coast Council's 2017 DCP allows pruning or removal without a permit of trees under 5m tall, under 3m canopy spread, and most listed exempt species — including camphor laurel (declared environmental weed), willow, privet, cotoneaster, and a handful of others on the exemption schedule. Trees within 3m of an approved dwelling for fire-safety reasons are also commonly exempt, as are dead trees and trees the council has assessed as imminently dangerous. The exemption schedule is published on the council website; we check it against your block's specific tree species and size before any work that approaches the boundary on a regulated tree." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the right way to prune to the boundary without harming the neighbour's tree?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The boundary cut must follow AS 4373: cut at a lateral branch or back to the branch collar — not flush, not stub-cut. A flush cut removes the collar and stops the tree sealing the wound; a stub leaves dead wood that rots back into the parent tree. Where the branch crosses the boundary in mid-span, the right call is often to cut at the next lateral inside your boundary that's at least one-third the diameter of the cut branch, which lets the tree re-route sap and seal cleanly. Removing more than 25–30% of a tree's live canopy in any one year — even from your side of the fence — is excessive under AS 4373 and may give the neighbour a damages claim." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to tell the neighbour before pruning the overhang?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Legally no — the common-law right doesn't require notice. Practically yes — a 5-minute conversation across the fence almost always sorts the issue without it becoming a Council mediation matter. Tell them which branches and when, offer them the cut wood back, and where the tree is regulated under the DCP, share the permit if you've had to apply for one. If the neighbour refuses access for the arborist to work safely from their side (where that would protect the parent tree), or if the branches are dropping onto your roof and they won't act, Central Coast Council's neighbour-tree mediation service can step in, and beyond that the Land & Environment Court hears formal disputes under the Trees (Disputes Between Neighbours) Act 2006." }
+    }
+  ]
+};
+---
+<Layout
+  title="Branch Overhang Dispute Central Coast — Neighbour Tree Rights"
+  description="Pruning a neighbour's tree on the Central Coast where it overhangs your block — your common-law right, the AS 4373 cut spec, exempt species under the Council 2017 DCP, neighbour notification, and the mediation pathway."
+  canonical="https://centralcoasttreeservice.com.au/branch-overhang-central-coast/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Boundary pruning &middot; Council DCP exemptions &middot; AQF-qualified arborists</span>
+      <h1>Neighbour&rsquo;s tree overhanging your <span class="accent">Central Coast</span> block?</h1>
+      <p class="hero-sub">
+        You have a common-law right to prune to the boundary &mdash; but you also
+        have AS 4373 obligations, a possible Tree Protection Order to navigate,
+        and a neighbour to keep on side. We do the prune properly, document the
+        cut for your file, check the species against the Central Coast Council
+        2017 DCP exemption schedule before we start, and help you handle the
+        conversation across the fence.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/quote/">Boundary-pruning quote</a>
+        <a class="btn btn-ghost" href="tel:+61485939966">Call us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Your common-law right &mdash; and where it stops</h2>
+      <p>
+        Under NSW common law you can prune any part of a neighbour&rsquo;s tree
+        that crosses the boundary, back to the boundary line, at your own cost.
+        You don&rsquo;t need permission, you don&rsquo;t need to give notice, and
+        the cost is yours. The branches you cut are technically still the
+        neighbour&rsquo;s property &mdash; you should offer them back before
+        chipping them and the polite move is to leave a stacked pile against
+        the boundary fence for collection.
+      </p>
+      <p>
+        The right stops at three lines: (1) no trespass onto the
+        neighbour&rsquo;s land &mdash; the climber and EWP must work entirely
+        from your side; (2) no damage to the parent tree &mdash; cuts must be
+        AS 4373 compliant; and (3) no touching a protected tree, whether by
+        Central Coast Council&rsquo;s 2017 DCP, a heritage listing or a court
+        order. Where the tree is regulated we apply for the permit and prune
+        lawfully, which takes about two weeks.
+      </p>
+
+      <h2>Central Coast Council 2017 DCP &mdash; what&rsquo;s exempt</h2>
+      <p>
+        Trees over 5m high or with canopy spread over 3m on private land are
+        prima facie regulated under the Council&rsquo;s 2017 Tree &amp;
+        Vegetation DCP, meaning a permit is required before pruning or removal
+        beyond minor maintenance. The exemption schedule cuts this back
+        considerably:
+      </p>
+      <p>
+        Camphor laurel, declared an environmental weed across NSW &mdash;
+        exempt, prune or remove without permit. Willow, privet, cotoneaster,
+        and the other declared weeds on the schedule &mdash; exempt. Trees
+        within 3m of an approved dwelling for fire-safety reasons &mdash;
+        commonly exempt subject to confirmation. Dead trees and trees the
+        council has assessed as imminently dangerous &mdash; exempt with
+        evidence (arborist&rsquo;s report). Self-sown saplings under the
+        regulated size &mdash; exempt. The full exemption schedule sits on
+        Council&rsquo;s website and is updated periodically; we check the
+        species and the site against the current schedule before quoting any
+        work near the boundary.
+      </p>
+      <p>
+        Where the tree is regulated and not exempt, the permit application
+        through Council takes 10&ndash;28 days and we lodge it for you with
+        an AQF 3 arborist&rsquo;s assessment. Pruning without permit on a
+        regulated tree carries penalty units that bite &mdash; far cheaper
+        to wait two weeks and do it lawfully.
+      </p>
+
+      <h2>The AS 4373 boundary-cut spec</h2>
+      <p>
+        Cuts must be made at a lateral branch or back to the branch collar
+        &mdash; never flush with the trunk and never as a stub. A flush cut
+        removes the collar and stops the tree sealing the wound, leaving an
+        open path for canker pathogens. A stub-cut leaves dead wood projecting
+        from the trunk that rots back into the parent tree over the next two
+        winters. The correct cut, in the right place, at the right time of
+        year for that species, lets the tree compartmentalise and callus the
+        wound naturally.
+      </p>
+      <p>
+        Where the overhanging branch crosses the boundary in mid-span, the
+        right call is often to cut at the next lateral inside your boundary
+        that&rsquo;s at least one-third the diameter of the cut branch &mdash;
+        a &ldquo;target lateral&rdquo; cut that lets the tree re-route sap to
+        that lateral and seal the wound cleanly. This commonly means we
+        actually cut slightly further inside your boundary than you might
+        have expected, which both protects the parent tree and gives you a
+        cleaner long-term profile.
+      </p>
+      <p>
+        AS 4373 also caps live-canopy removal at 25&ndash;30% in any one year.
+        On a heavily overhanging mature tree it can be tempting to ask for
+        the whole side cleared back to the fence; if that exceeds the cap, we
+        stage it across two pruning windows 12&ndash;15 months apart, or we
+        prune to the cap now and book a return. Removing too much in one go
+        even from your own side of the fence can give the neighbour a basis
+        for a damages claim, because the tree may decline as a result.
+      </p>
+
+      <h2>The conversation across the fence &mdash; and Council mediation</h2>
+      <p>
+        Legally you don&rsquo;t have to tell the neighbour. Practically, a
+        five-minute conversation almost always sorts it without it escalating.
+        Tell them what branches and when, offer them the cut wood, and where
+        the tree is regulated share the permit you&rsquo;ve obtained. Most
+        Central Coast neighbours appreciate the heads-up &mdash; they often
+        haven&rsquo;t noticed the overhang.
+      </p>
+      <p>
+        Where the conversation doesn&rsquo;t go well &mdash; the neighbour
+        refuses access for the climber to work safely from their side where
+        that would protect the parent tree, or branches are dropping onto
+        your roof or pool and the neighbour won&rsquo;t act &mdash; Central
+        Coast Council&rsquo;s neighbour-tree mediation service can step in
+        as a first stop. Beyond that, the NSW Land &amp; Environment Court
+        hears formal disputes under the <em>Trees (Disputes Between Neighbours)
+        Act 2006</em>, which gives the court power to order pruning, removal
+        or compensation. The Act covers high hedges (over 2.5m blocking
+        sunlight or views) and dangerous trees specifically.
+      </p>
+      <p>
+        For court-grade evidence, an AQF Level 5 consulting arborist&rsquo;s
+        report is required. We hold AQF 3 in-house and refer to local AQF 5
+        consultants if a matter is heading that way.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>FAQs &mdash; boundary rights, exemptions, cut spec, mediation</h2>
+      <h3>Can I prune my neighbour&rsquo;s tree where it overhangs my block?</h3>
+      <p>
+        Yes, back to the boundary line, at your cost, no notice required.
+        Subject to: no trespass to make the cut, no damage to the parent
+        tree (AS 4373 cuts only), and no protected-tree pruning without
+        permit. The cut branches remain the neighbour&rsquo;s property &mdash;
+        offer them back.
+      </p>
+      <h3>Which trees are exempt from Council Tree Preservation Order rules?</h3>
+      <p>
+        Under the Council 2017 DCP exemption schedule: trees under 5m / 3m
+        canopy spread, listed weed species (camphor laurel, willow, privet,
+        cotoneaster), trees within 3m of an approved dwelling for fire safety,
+        dead trees with evidence, and the rest of the exemption list. We
+        check the live schedule before quoting boundary work.
+      </p>
+      <h3>How do I prune to the boundary without harming the neighbour&rsquo;s tree?</h3>
+      <p>
+        Cut at the branch collar or at a target lateral one-third the diameter
+        of the cut branch &mdash; no flush cuts, no stubs &mdash; per AS 4373.
+        Don&rsquo;t exceed 25&ndash;30% live-canopy removal in one year; stage
+        heavier work across two windows.
+      </p>
+      <h3>Do I have to tell the neighbour first?</h3>
+      <p>
+        Legally no. Practically yes &mdash; a five-minute conversation, offer
+        the cut wood back, share any permit. If the conversation breaks down,
+        Council&rsquo;s neighbour-tree mediation service is the first step;
+        the NSW Land &amp; Environment Court under the 2006 Act is the
+        formal escalation.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner cta-block">
+      <h2>Boundary prune coming up? Send us the species and a photo of the overhang.</h2>
+      <p>
+        We&rsquo;ll check the tree against the Council 2017 DCP exemption
+        schedule, apply for a permit if needed, quote the work to AS 4373,
+        and where the conversation across the fence is awkward we&rsquo;ll
+        help you write the note. AQF Level 3 arborists, fully insured,
+        servicing the full Central Coast from Killcare and Umina to Lake
+        Macquarie&rsquo;s southern edge.
+      </p>
+      <p class="ph-text">
+        Call <a class="ph-cta btn btn-primary" href="tel:+61485939966">+61 485 939 966</a>
+        or email <a href="mailto:quotes@centralcoasttreeservice.com.au">quotes@centralcoasttreeservice.com.au</a>
+        with the species, your suburb and a photo from your side of the fence.
+      </p>
+    </div>
+  </section>
+</Layout>

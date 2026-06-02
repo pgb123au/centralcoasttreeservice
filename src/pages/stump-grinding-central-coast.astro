@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why isn't a 150mm stump grind deep enough before paving on a Central Coast block?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A 150mm grind is the lawn-only depth — it lets you re-turf or drop in a couple of inches of topsoil and forget the stump exists. Pavers, a concrete slab or strip footings are a different problem. Pavers are usually bedded on 50–80mm of road base over a 100mm compacted sub-base, which already eats your 150mm before you've laid the first paver. Worse, any remaining stump shoulder sits in the wet zone under the paving and rots over the next 18–36 months, leaving a soft pocket that drops your pavers visibly. From the Wamberal sand-belt down through Erina and inland to Lisarow we grind to 600mm under any future paving, slab or footing and chase the four cardinal lateral roots out past the future edge of the build." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a 600mm grind cost extra over a standard stump grind?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On a single Central Coast stump of 400–700mm diameter, the extra to drop the grind from a standard 200–300mm down to a clean 600mm is typically $80–$220 on top of the base grind price. The reason it isn't double is the machine is already on site, the operator is already running it, and only the bottom 300mm is genuinely new work. If you have multiple stumps the per-stump premium drops further. We'd rather you ring once and pay the extra now than have us back in a year because your pavers are dipping." }
+    },
+    {
+      "@type": "Question",
+      "name": "What should the root-zone be backfilled with before building over a ground stump?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not the wood chip. Wood chip rots, loses 30–60% of its volume in the first two summers, and gives you a settle hole exactly where you don't want one. For anything load-bearing we remove the chip, then backfill the void in 150mm lifts of road base or 20mm crushed rock, compacting each lift with a plate compactor. The top 100mm can be sand or sandy loam if you're paving direct, or a structural fill spec if a slab is going over. We'll dump the chip on your garden bed as mulch — it's still useful, just not as footing-grade fill." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should I wait before pouring concrete or laying pavers over a ground stump?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If the void is backfilled with compacted road base in 150mm lifts as above, you can build over it the same week. If the hole is filled with the wood chip from the grind, you need to wait 18–24 months for the chip to break down and settle, and even then you'll usually still get some subsidence. Most Central Coast owners don't have 18 months. So the rule is: backfill structurally, build that month. Backfill with chip, only ever turf or plant on top of it." }
+    }
+  ]
+};
+---
+<Layout
+  title="Stump Grinding Depth Central Coast — Pre-Paving & Pre-Footing"
+  description="600mm stump grinding on the Central Coast for owners about to pave, slab or build. Why a lawn-grade 150mm grind isn't enough, the structural backfill spec, and the settle window before you build over it."
+  canonical="https://centralcoasttreeservice.com.au/stump-grinding-central-coast/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Pre-paving &middot; pre-footing &middot; AQF-qualified arborists</span>
+      <h1>Stump grinding depth on the <span class="accent">Central Coast</span> — when 150mm isn&rsquo;t enough.</h1>
+      <p class="hero-sub">
+        If you&rsquo;re paving, pouring a slab, dropping in strip footings or laying a
+        permanent path over a ground stump, the lawn-grade 150mm grind your last quote
+        was based on will fail you inside 18 months. We grind to 600mm under any future
+        build, chase the lateral roots out past the build edge, and give you a
+        compaction-grade backfill spec so you don&rsquo;t end up with a paver dip or a
+        slab crack where the stump used to be.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/quote/">Get a 600mm grind quote</a>
+        <a class="btn btn-ghost" href="tel:+61485939966">Call us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The Central Coast soil profile makes this worse, not better</h2>
+      <p>
+        From Killcare and Umina across the Woy Woy peninsula, through the sandy
+        sediment around Wamberal and Terrigal, and the heavier clays of Lisarow,
+        Wyong and out to the Tuggerah Lakes catchment, the Central Coast doesn&rsquo;t
+        give you a forgiving sub-grade. Sandy blocks let the rotting stump column
+        drain wet and dry repeatedly, accelerating breakdown of any remaining wood
+        and pulling fines down into the void. Clay blocks shrink and swell with
+        every wet/dry cycle and lift any uncompacted fill out of true. Either way,
+        if you grind shallow and build over it, the build moves.
+      </p>
+      <p>
+        We&rsquo;ve been called back to too many Avoca Beach courtyards and Erina
+        Heights driveways where a $300 lawn-grade grind was done two summers ago
+        and now there&rsquo;s a 40&ndash;80mm dip under the pavers. The grinder cost
+        was identical &mdash; the cheap job missed the lateral roots and stopped
+        at 200mm. The fix is to lift the pavers, re-grind, re-base, re-lay. Cheaper
+        to do once, properly.
+      </p>
+
+      <h2>The 600mm rule and what it actually means</h2>
+      <p>
+        Six hundred millimetres below finished surface level is the depth we work
+        to for any future paving, slab, strip footing, retaining-wall footing or
+        permanent path. It&rsquo;s deeper than most homeowners expect because the
+        sum of the build-up is bigger than they expect: 150mm of road base, 30mm
+        of bedding sand, 60mm of paver, plus the original turf and topsoil you&rsquo;ve
+        already scraped off, and you&rsquo;re routinely 250&ndash;350mm down before
+        you even touch the stump shoulder. Add the rooting depth of the four
+        cardinal laterals from a mature stump and 600mm is the honest number.
+      </p>
+      <p>
+        AQF Level 3 is the working-arborist trade qualification we hold &mdash;
+        the certificate that says we&rsquo;re trained to operate a stump grinder
+        and read a root collar. AQF Level 5 is the consulting tier (the one you
+        engage for AS 4970 tree-protection reports or risk assessments to court
+        standard). For a stump grind to depth, AQF 3 is the qualification you&rsquo;re
+        paying for, and you should ask to see it. A landscaper with a hired
+        grinder is not an arborist.
+      </p>
+
+      <h2>The backfill spec we leave you with</h2>
+      <p>
+        When the grind&rsquo;s done we don&rsquo;t just dump the chip back in and
+        wave goodbye. For a build-grade finish we extract the chip from the void,
+        leave it in a heap on your garden bed if you want mulch (it&rsquo;s genuinely
+        good mulch &mdash; eucalypt fines, slightly aged), and then either backfill
+        with road base in 150mm lifts compacted with a plate, or hand the void
+        over to your concreter / paver / builder for them to backfill to their
+        own spec. Most of the better Central Coast paving crews want to base-it
+        themselves so the warranty stays clean. We&rsquo;ll work to whatever your
+        next trade wants &mdash; just tell us at the quote.
+      </p>
+      <p>
+        Typical removal-plus-grind pricing across the region for a single mature
+        tree (12&ndash;18m, common species like spotted gum, angophora, jacaranda,
+        camphor laurel) is $300 at the easy end (small tree, drop and chip, single
+        stump grind to lawn depth) up to $1,500 for big jobs (tight access, crane
+        not required, multiple stumps, 600mm grind on the main stump). Storm-damage
+        callouts and craned removals quote separately.
+      </p>
+
+      <h2>Settle window &mdash; how long before you build over it</h2>
+      <p>
+        With a road-base structural backfill compacted in lifts: the next trade can
+        start the same week. With a wood-chip backfill: 18&ndash;24 months minimum,
+        and most owners still see 30&ndash;60mm of subsidence at the centre of the
+        chip column even then. The chip breaks down and the void re-opens. So if
+        the brief is &ldquo;build over it&rdquo;, the brief on the day of the grind
+        is &ldquo;chip out, road base in&rdquo;. If the brief is &ldquo;new garden bed
+        over it&rdquo;, the chip can stay &mdash; it&rsquo;ll just settle into a
+        dished bed and you&rsquo;ll top it up with topsoil twice over the next
+        couple of years.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>FAQs &mdash; depth, cost, fill, settle window</h2>
+      <h3>Why isn&rsquo;t a 150mm stump grind deep enough before paving?</h3>
+      <p>
+        The paver build-up (sub-base, bedding sand, paver) eats your 150mm before
+        the first paver lands. Anything left of the stump shoulder rots into a
+        soft pocket within 18&ndash;36 months and your pavers visibly drop. Anywhere
+        from Wamberal to Lisarow we grind to 600mm under future paving, slab or
+        footing and chase the four cardinal laterals out past the edge.
+      </p>
+      <h3>What&rsquo;s the extra cost to go from a 200mm grind to a 600mm grind?</h3>
+      <p>
+        Usually $80&ndash;$220 on a single 400&ndash;700mm stump on top of the base
+        grind. The machine&rsquo;s already on site, the operator&rsquo;s already
+        running it, so only the bottom 300mm is genuinely new work. Multiple
+        stumps drop the premium further per stump.
+      </p>
+      <h3>What do you backfill the void with before building over it?</h3>
+      <p>
+        Not the wood chip &mdash; chip rots and loses 30&ndash;60% of its volume,
+        giving you a settle hole. For anything load-bearing we remove the chip
+        and backfill in 150mm lifts of road base or 20mm crushed rock, plate-compacted.
+        The chip goes on your garden bed as free mulch.
+      </p>
+      <h3>How long after the grind before I can pour the slab or lay the pavers?</h3>
+      <p>
+        Same week, if backfill is compacted road base. 18&ndash;24 months, if backfill
+        is the wood chip from the grind &mdash; and you&rsquo;ll still likely see
+        subsidence. So the rule is structural backfill &rarr; build now; chip backfill
+        &rarr; turf or plant only.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner cta-block">
+      <h2>Booking a grind before your concreter, paver or builder shows up?</h2>
+      <p>
+        Tell us at the quote &mdash; we&rsquo;ll work to the depth your next trade
+        needs, give you a written backfill spec they can sign off, and time the
+        grind so the void isn&rsquo;t open through a wet weekend. AQF Level 3
+        qualified, SafeWork NSW licensed, fully insured, and we work the full
+        coast from Killcare to Lake Macquarie&rsquo;s edge.
+      </p>
+      <p class="ph-text">
+        Call <a class="ph-cta btn btn-primary" href="tel:+61485939966">+61 485 939 966</a>
+        or email <a href="mailto:quotes@centralcoasttreeservice.com.au">quotes@centralcoasttreeservice.com.au</a>.
+      </p>
+    </div>
+  </section>
+</Layout>

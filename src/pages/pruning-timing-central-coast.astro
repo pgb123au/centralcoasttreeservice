@@ -1,0 +1,223 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why shouldn't you prune a Central Coast jacaranda in July?",
+      "acceptedAnswer": { "@type": "Answer", "text": "July is the back end of winter dormancy on the Coast — sap is just starting to rise on a jacaranda preparing for its September flush, and any pruning cut you make then bleeds heavily for weeks, drawing in sap-loving borers and exposing the cut face to wet-winter fungal pressure. Worse, you lop off the wood that was about to carry the November flower display. The correct window for a jacaranda on a Terrigal, Erina or Gosford block is the dry tail of summer, late February through March, after flowering, when the tree is in active growth and cuts seal quickly under AS 4373 pruning practice." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the pruning calendar for the common Central Coast species?",
+      "acceptedAnswer": { "@type": "Answer", "text": "By species: spotted gum and angophora — late autumn (April–May) for structural prune, never in the spring sap-flow window. Jacaranda — late February to March, after flowering. Camphor laurel — anytime except wet midsummer (high pathogen pressure on cut faces). Plane tree and ornamental fig — winter dormancy June–July, when fully leafless, for clean structural cuts. Citrus on coastal blocks — late winter after the last frost, before spring flush. Banksia and grevillea — light tip-prune only, immediately after flowering, never structural. The general AS 4373 rule is never remove more than 25–30% of live canopy in any single year, regardless of species or window." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a structural prune and a cosmetic prune?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A structural prune is the once-every-3-to-7-year work that sets the tree up for life — removing co-dominant leaders, formative-cutting young trees to a single dominant stem, taking out crossing branches and dead wood, and lifting the canopy for clearance. It needs an AQF Level 3 arborist following AS 4373:2007 and is the prune that protects the tree against storm failure. A cosmetic prune is the annual or biennial tidy-up — clearing the line of sight from the deck, trimming back off the gutter, shaping the streetside hedge. Cosmetic work can be done in narrower windows but mustn't remove a structural decision someone else made." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does disease spread from a sap-running pruning cut and how do you stop it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A fresh cut that bleeds sap is an open feeder for sap-borne pathogens — Botryosphaeria canker on eucalypts, Ceratocystis on stone fruit, Phytophthora on susceptible species via splash-back from infected mulch. The two prevention rules under AS 4373 are: cut at the right time of year (when sap pressure is lowest for that species) and disinfect tools between trees with 70% ethanol or 10% bleach, especially when working through a row of the same species. We don't use pruning paint — modern arboriculture has moved away from sealing compounds, which trap moisture against the cut and slow callus formation rather than helping it." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pruning Timing by Species — Central Coast Arborist Calendar"
+  description="When not to prune a Central Coast tree — species-by-species pruning calendar for jacaranda, spotted gum, angophora, camphor laurel, plane, citrus and banksia. AS 4373 standard, structural vs cosmetic, sap-flow risk."
+  canonical="https://centralcoasttreeservice.com.au/pruning-timing-central-coast/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">AS 4373:2007 pruning &middot; species calendar &middot; AQF Level 3 arborists</span>
+      <h1>Pruning timing by species on the <span class="accent">Central Coast</span> &mdash; when not to prune.</h1>
+      <p class="hero-sub">
+        Prune the wrong species at the wrong time of year and you bleed sap for
+        a month, invite borers into the cut face, and lop off the very wood that
+        was about to carry next season&rsquo;s flowers. We work to the AS 4373
+        standard, follow a species-by-species calendar that respects each
+        tree&rsquo;s sap-flow and disease-pressure profile, and we&rsquo;ll tell
+        you straight if the right answer is &ldquo;come back in three months&rdquo;.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/quote/">Book the right window</a>
+        <a class="btn btn-ghost" href="tel:+61485939966">Call us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>AS 4373 &mdash; the standard your prune should be quoted to</h2>
+      <p>
+        AS 4373:2007 &ldquo;Pruning of amenity trees&rdquo; is the Australian
+        Standard that defines the four legitimate cut types &mdash; canopy
+        thinning, canopy reduction, canopy lifting and selective pruning &mdash;
+        and the no-go cuts (lopping, topping, lion-tailing, flush cutting). It
+        also sets the 25&ndash;30% maximum live-canopy removal per year and the
+        target-cut geometry that lands outside the branch collar so the tree
+        can seal the wound by compartmentalisation rather than rot inwards.
+      </p>
+      <p>
+        If a quote on a Wyong or Tuggerah block describes work as &ldquo;topping&rdquo;
+        or &ldquo;hat-racking&rdquo;, that&rsquo;s not pruning &mdash; that&rsquo;s
+        mutilation under the standard, and the tree will respond with weakly
+        attached epicormic shoots that fail in the next storm. Insurers know this.
+        Council knows this. Re-pruning a topped tree to recovery is a multi-year
+        program, far more expensive than doing it right the first time.
+      </p>
+
+      <h2>The Central Coast species calendar</h2>
+      <p>
+        Different species have different sap-flow peaks, different disease windows
+        and different flower-bud cycles. The general rules:
+      </p>
+      <p>
+        <strong>Spotted gum and angophora &mdash;</strong> the two dominant native
+        canopy species from the Brisbane Water hinterland through to Lake
+        Macquarie&rsquo;s edge. Late autumn (April&ndash;May) is the structural
+        prune window: sap flow is dropping, growth pressure is low, and cuts seal
+        cleanly through the cool dry month before the wet returns. Never prune
+        eucalypts in spring &mdash; the sap-flow window is when canker pathogens
+        ride in on the bleed.
+      </p>
+      <p>
+        <strong>Jacaranda &mdash;</strong> the suburban purple-flower icon from
+        Avoca to Erina. Prune late February through March, immediately after
+        flowering, when the tree is in active growth and cuts seal quickly. A
+        July prune cuts off the September flush wood and bleeds for weeks. A
+        September prune removes the buds.
+      </p>
+      <p>
+        <strong>Camphor laurel &mdash;</strong> declared environmental weed on
+        the Coast but still a heritage shade tree on older Gosford and Woy Woy
+        blocks. Anytime except midsummer (December&ndash;January) when the wet
+        and the warmth give cut-face pathogens an easy run. Cool dry weeks are
+        best.
+      </p>
+      <p>
+        <strong>Plane tree and ornamental fig &mdash;</strong> deciduous and
+        evergreen exotics common as street trees and large garden specimens.
+        Winter dormancy, June&ndash;July, when the plane is fully leafless and
+        the structural framework is visible. Clean, sealable cuts.
+      </p>
+      <p>
+        <strong>Citrus &mdash;</strong> back-garden lemon, mandarin, lime, orange.
+        Late winter (August) after the last frost risk passes and before the
+        spring flush. Never in active flush or fruit set.
+      </p>
+      <p>
+        <strong>Banksia and grevillea &mdash;</strong> native garden species,
+        common in coastal sandy-soil gardens from Killcare through Umina Beach
+        to Norah Head. Tip-prune only, immediately after the flower spike fades,
+        for a denser bush next season. Structural pruning of mature banksia is
+        rarely justified &mdash; the tree will rarely re-shoot from old wood.
+      </p>
+
+      <h2>Structural prune vs cosmetic prune &mdash; pricing and frequency</h2>
+      <p>
+        A structural prune is the every-3-to-7-year intervention that decides
+        the tree&rsquo;s long-term form: removing co-dominant leaders before
+        they become bark-included unions waiting to fail, lifting the canopy
+        for vehicle or sight-line clearance, taking out crossing limbs and
+        deadwood, formative-cutting young trees toward a single dominant stem.
+        AQF Level 3 work, climbed by a roped climber on a small to medium tree,
+        EWP-accessed on a bigger one. Typical pricing across the Coast for a
+        single mature tree structural prune sits in the $400&ndash;$1,200 band.
+      </p>
+      <p>
+        A cosmetic prune is the annual or biennial tidy: clear off the roof line,
+        trim the streetside hedge to council&rsquo;s footpath clearance, lift the
+        canopy off the deck. Quicker work, often a 2-hour visit, typically
+        $200&ndash;$500 on a normal-access suburban block. The trap is that a
+        run of cosmetic prunes by different operators across the years can
+        accumulate into a badly shaped tree &mdash; one operator lifts the
+        canopy too high, the next one over-thins the inside, a third removes
+        the wrong leader and locks in a co-dominant union. The fix is to
+        commit to a single operator on a structural cycle.
+      </p>
+
+      <h2>Disease pressure on cut faces &mdash; why timing matters</h2>
+      <p>
+        A pruning cut is a wound. Until the tree seals it with callus tissue
+        (weeks to months depending on species and conditions), it&rsquo;s an
+        open path for sap-borne pathogens: Botryosphaeria canker through
+        eucalypt cuts in spring sap-flow; Ceratocystis on stone-fruit cuts in
+        warm wet weather; Phytophthora root rot moving up via splash-back from
+        infected mulch onto low cuts. The two AS 4373 prevention rules are:
+        cut at the right time of year for that species (low sap pressure,
+        low pathogen pressure), and disinfect pruning tools between trees with
+        70% ethanol or 10% bleach when working through a row of the same species.
+      </p>
+      <p>
+        Modern arboriculture has moved away from pruning paint &mdash; sealants
+        trap moisture against the cut and slow callus formation. The correct
+        AS 4373 cut at the correct time, sealed by the tree itself, is the
+        protective standard. AQF 3 is the qualification that proves it.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>FAQs &mdash; pruning windows, species, disease, standards</h2>
+      <h3>Why not prune a Central Coast jacaranda in July?</h3>
+      <p>
+        Sap is rising, cuts bleed for weeks, the tree is preparing the
+        September flush you&rsquo;d be lopping off, and the wet-winter pathogen
+        pressure goes straight into the open wound. Correct window is late
+        February to March, after flowering, when cuts seal quickly.
+      </p>
+      <h3>What&rsquo;s the calendar for the rest of the common species?</h3>
+      <p>
+        Spotted gum and angophora &mdash; late autumn structural prune.
+        Camphor laurel &mdash; cool dry weeks, avoid midsummer wet. Plane and
+        ornamental fig &mdash; June&ndash;July winter dormancy. Citrus &mdash;
+        late winter after frost. Banksia and grevillea &mdash; tip-prune only,
+        immediately after flowering.
+      </p>
+      <h3>Structural prune or cosmetic prune &mdash; which do I need?</h3>
+      <p>
+        Structural is the every-3-to-7-year set-up: co-dominant leader removal,
+        canopy lift, formative cuts, deadwood &mdash; AQF 3 work, $400&ndash;$1,200.
+        Cosmetic is the annual tidy &mdash; gutter clearance, hedge trim &mdash;
+        $200&ndash;$500. Both follow AS 4373; never &ldquo;topping&rdquo; or
+        &ldquo;hat-racking&rdquo;.
+      </p>
+      <h3>Do you seal cuts with pruning paint?</h3>
+      <p>
+        No. Modern arboriculture has moved away from sealing compounds &mdash;
+        they trap moisture, slow callus formation and worsen the wound. The
+        correct AS 4373 cut at the correct time of year, sealed by the tree
+        itself, is the protective standard.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner cta-block">
+      <h2>Not sure if your tree is in window? Send us the species and a photo.</h2>
+      <p>
+        We&rsquo;ll tell you straight: prune now, prune in three months, or
+        leave it alone this year. Free phone advice, written AS 4373 quote
+        when you&rsquo;re ready to book. AQF Level 3 arborists, fully
+        insured, working from Killcare and Umina up through Gosford and Erina
+        to Wyong, Tuggerah and the Lake Macquarie boundary.
+      </p>
+      <p class="ph-text">
+        Call <a class="ph-cta btn btn-primary" href="tel:+61485939966">+61 485 939 966</a>
+        or email <a href="mailto:quotes@centralcoasttreeservice.com.au">quotes@centralcoasttreeservice.com.au</a>
+        with the species, the suburb and a photo of the canopy.
+      </p>
+    </div>
+  </section>
+</Layout>
